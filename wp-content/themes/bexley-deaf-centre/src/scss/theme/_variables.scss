@@ -1,0 +1,28 @@
+:root {
+
+   // Fonts 
+   --title-font: "Roboto", sans-serif;
+   --para-font: "Nunito", sans-serif;
+   
+   // Theme colours
+   --black:  #000000;
+   --white: #ffffff;
+   --light-grey: #F5F5F5;
+   --primary: #103f54;
+   --primary-hover: #3582a6;
+   --secondary: #F8931A;
+   --secondary-hover: #cf7506;
+   --light-blue: #01B9F4;
+   --primary-bg: #F2F7FC;
+   --secondary-bg: #F4F3EF;
+   --text-color: rgb(100,100,100);
+
+   // Spacing 
+   --mobileGap: 20px;
+   --desktopGap: 40px;
+
+   --border-radius: 30px;
+   --border-radius-medium: 20px;
+   --border-radius-small: 10px;
+   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

@@ -1,0 +1,66 @@
+@use '../../../src/scss/theme/index' as *;
+
+.simple-team {
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__card {
+        width: 100%;
+    }
+
+    &__card-image {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        border-radius: var(--border-radius-small);
+    }
+
+    &__card-content {
+
+        padding: 20px 0;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .simple-team {
+        &__inner {
+            flex-direction: row;
+        }
+
+        &__card {
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+@include breakpoint(md) {
+   .simple-team {
+        &__card {
+            width: calc(25% - 22.5px);
+        }
+
+        &.three-column {
+
+            .simple-team__inner {
+                margin: 0 100px;
+            }
+
+            .simple-team__card {
+                width: calc(33.333% - 30px);
+            } 
+        }
+    } 
+}

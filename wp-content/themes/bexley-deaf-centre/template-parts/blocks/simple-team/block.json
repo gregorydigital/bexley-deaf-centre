@@ -1,0 +1,25 @@
+{
+	"name": "acf/simple-team",
+	"title": "Simple Team",
+	"description": "A section showing team members",
+	"category": "base-theme-block",
+	"keywords": ["team staff"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "simple-team.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+@use '../../../src/scss/theme/index' as *;
+
+.general-cta {
+
+    overflow: hidden;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__left {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        max-width: 700px;
+        z-index: 1;
+        position: relative;
+
+        h2, p {
+            margin-bottom: 0;
+        }
+    } 
+
+    .cta-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+    &.bg-image {
+
+        .general-cta__left {
+            h2, p {
+                color: white;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: 1;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(000, 000, 000, 0.5);        
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .general-cta {
+        &__inner {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 60px;
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .general-cta {
+        &__left {
+            padding-bottom: 0px;
+        } 
+    }
+}

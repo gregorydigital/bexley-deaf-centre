@@ -1,0 +1,26 @@
+@use './index' as *;
+
+section {
+    &.bg-primary {
+        background-color: var(--primary);
+    }
+
+    &.bg-secondary {
+        background-color: var(--secondary);
+    }
+
+    &.bg-white {
+        background-color: white;
+    }
+
+    &.bg-grey {
+        background-color: var(--light-grey);
+    }
+
+    &.bg-pattern {
+        background-image: url('/wp-content/themes/bexley-deaf-centre/images/pattern-background.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

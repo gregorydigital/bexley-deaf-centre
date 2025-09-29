@@ -1,0 +1,90 @@
+@use '../../../src/scss/theme/index' as *;
+
+.home-hero {
+   position: relative;
+   overflow: hidden;
+   padding: 40px 0;
+
+   > img {
+      z-index: 0;
+   }
+
+   &:before {
+      position: absolute;
+      content: '';
+      right: 0;
+      bottom: 0;
+      height: 280px;
+      width: 70%;
+      background: linear-gradient(220deg,rgba(16, 63, 84, 1) 0%, rgba(53, 130, 166, 1) 67%);
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+      background-color: var(--secondary);
+      z-index: 1;
+   }
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 90px;
+   }
+
+   &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      z-index: 1;
+
+      h1, p {
+         margin-bottom: 0;
+      }
+
+      h1 {
+         font-weight: 700;
+         color: var(--primary);
+      }
+   }
+
+   &__right {
+      height: 200px;
+      width: 80%;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+   }
+
+   &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+   }
+}
+
+@include breakpoint(sm) {
+   .home-hero {
+
+      height: 600px;
+      padding-top: 30px;
+
+      &:before {
+         bottom: unset;
+         top: 30px;
+         height: calc(100% - 60px);
+         width: 30%;
+      }
+
+      &__right {
+         margin-top: 30px;
+         height: calc( 100% - 60px);
+      }
+
+      &__inner {
+         height: 540px;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 60px;
+      }
+   }
+}
