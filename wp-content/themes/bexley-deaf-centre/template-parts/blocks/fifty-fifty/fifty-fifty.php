@@ -22,7 +22,7 @@
          <div class="fifty-fifty__inner"> 
             <div class="fifty-fifty__left" data-aos="fade-up">
                <?php if($subtitle): ?>
-                  <h4><?php echo $subtitle; ?></h4>
+                  <span class="fifty-fifty__preheader"><?php echo $subtitle; ?></span>
                <?php endif; ?>
                <?php if($title): ?>
                   <h2><?php echo $title; ?></h2>
