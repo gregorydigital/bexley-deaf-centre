@@ -3,6 +3,7 @@
     $form_title = get_field('form_title');
     $text = get_field('text');
     $image = get_field('image');
+    $form_id = get_field('forminator_form_id'); // The selected form ID
     $phone = get_field('phone_number', 'options');
     $email = get_field('email_address', 'options');
 ?>
@@ -41,8 +42,10 @@
                     <?php if(!empty($form_title)): ?>
                         <h3><?php echo esc_html($form_title); ?></h3>
                     <?php endif; ?>
-                    <?php echo do_shortcode('[forminator_form id="468"]'); ?>
-                </div>
+                    <?php if ($form_id) {
+                        echo do_shortcode("[forminator_form id='{$form_id}']");
+                    } ?>                
+                    </div>
             </div>
         </div>
     </section>

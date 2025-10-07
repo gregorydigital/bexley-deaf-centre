@@ -1,9 +1,9 @@
 {
-    "key": "group_68a47790a5204",
-    "title": "Block: Contact Form",
+    "key": "group_68e4e44ce2630",
+    "title": "Block: Course List",
     "fields": [
         {
-            "key": "field_68a47790f3535",
+            "key": "field_68e4e44d81873",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -24,7 +24,7 @@
             "append": ""
         },
         {
-            "key": "field_68a4779bf3536",
+            "key": "field_68e4e45781874",
             "label": "Text",
             "name": "text",
             "aria-label": "",
@@ -45,11 +45,11 @@
             "new_lines": ""
         },
         {
-            "key": "field_68a58a98d6ceb",
-            "label": "Image",
-            "name": "image",
+            "key": "field_68e51c0d00a15",
+            "label": "Link",
+            "name": "link",
             "aria-label": "",
-            "type": "image",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -59,42 +59,12 @@
                 "id": ""
             },
             "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
+            "allow_in_bindings": 0
         },
         {
-            "key": "field_68a58e1ab7e6b",
-            "label": "Form Title",
-            "name": "form_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_68e52299afb04",
-            "label": "Forminator Form ID",
-            "name": "forminator_form_id",
+            "key": "field_68e4e46a81875",
+            "label": "Course Level Filter",
+            "name": "course_level_filter",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -106,8 +76,10 @@
                 "id": ""
             },
             "choices": {
-                "1465": "course-enquiry-form (ID: 1465)",
-                "468": "contact-form (ID: 468)"
+                "BSL Level 1": "BSL Level 1",
+                "BSL Level 2": "BSL Level 2",
+                "BSL Level 3": "BSL Level 3",
+                "All": "All"
             },
             "default_value": false,
             "return_format": "value",
@@ -126,7 +98,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/contact-form"
+                "value": "acf\/course-list"
             }
         ]
     ],
@@ -139,5 +111,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759847184
+    "modified": 1759845400
 }

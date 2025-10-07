@@ -65,3 +65,61 @@
         }
         return $categories;
     }, 10, 2);
+
+    add_filter('forminator_field_markup', function($html, $field, $form) {
+        $target_form_id = 1465;         // Your form ID
+        $target_elem_id = 'select-1';   // The Forminator select field you're replacing
+    
+        if ((int)$form->model->id === $target_form_id && $field['element_id'] === $target_elem_id) {
+            $today = date('Ymd');
+            $options_html = '<option value="">Please select a course…</option>';
+    
+            if (have_rows('bsl_courses', 'option')) {
+                while (have_rows('bsl_courses', 'option')) {
+                    the_row();
+                    $level    = get_sub_field('course_level');
+                    $date_raw = get_sub_field('start_date');
+    
+                    // Normalise date
+                    if (preg_match('/^\d{8}$/', $date_raw)) {
+                        $date_obj = DateTime::createFromFormat('Ymd', $date_raw);
+                        $date_val = $date_raw;
+                    } else {
+                        $date_obj = DateTime::createFromFormat('d/m/Y', $date_raw);
+                        $date_val = $date_obj ? $date_obj->format('Ymd') : '';
+                    }
+    
+                    // Only future courses
+                    if ($date_val && $date_val >= $today) {
+                        $label = sprintf('%s - %s', $date_obj->format('j M Y'), $level);
+                        $options_html .= sprintf(
+                            '<option value="%s">%s</option>',
+                            esc_attr($label),
+                            esc_html($label)
+                        );
+                    }
+                }
+            }
+    
+            // Render standalone dropdown
+            $html  = '<label for="acf-course-select">Select a Course of Interest</label>';
+            $html .= '<select id="acf-course-select" class="acf-course-select">';
+            $html .= $options_html;
+            $html .= '</select>';
+        }
+    
+        return $html;
+    }, 15, 3);
+
+    add_filter('acf/load_field/name=forminator_form_id', function ($field) {
+        if (class_exists('Forminator_API')) {
+            $forms = Forminator_API::get_forms();
+            if (!empty($forms)) {
+                $field['choices'] = [];
+                foreach ($forms as $form) {
+                    $field['choices'][$form->id] = $form->name . ' (ID: ' . $form->id . ')';
+                }
+            }
+        }
+        return $field;
+    });

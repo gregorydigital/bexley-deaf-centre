@@ -1,0 +1,25 @@
+{
+	"name": "acf/course-list",
+	"title": "Course List",
+	"description": "List of Courses Available",
+	"category": "base-theme-block",
+	"keywords": ["course list bsl"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "course-list.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

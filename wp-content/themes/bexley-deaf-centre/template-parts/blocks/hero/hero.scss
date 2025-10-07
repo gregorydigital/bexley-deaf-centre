@@ -46,6 +46,36 @@
 
 
    }
+
+   &__inner {
+      display: grid;
+      align-items: center;
+      gap: 40px;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   &__course {
+      padding: 20px;
+      border-radius: 4px;
+      background-color: var(--primary);
+      z-index: 2;
+
+      p {
+         color: white;
+
+         &:last-of-type {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+
+@include breakpoint(sm) {
+   .hero {
+      &__inner {
+         grid-template-columns: 1fr 300px;
+      }
+   }
 }
 
 
@@ -60,6 +90,11 @@
       .container {
          padding-top: 110px;
          padding-bottom: 110px;
+      }
+
+      &__inner {
+         grid-template-columns: 1fr 380px;
+         gap: 140px;
       }
 
       &__content {

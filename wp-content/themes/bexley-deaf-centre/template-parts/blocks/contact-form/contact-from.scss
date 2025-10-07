@@ -100,8 +100,41 @@
 
     &__right {
 
+        .bsl-select {
+            border-radius: 0px;
+            outline: none;
+            width: 100%;
+            padding: 10px;
+        }
+
         .forminator-row {
             margin-bottom: 24px !important;
+
+            label {
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                margin-bottom: 4px !important;
+            }
+        }
+
+        .forminator-row .custom-hidden {
+            display: none !important;
+        }
+        
+        .forminator-row:has(.custom-hidden) {
+            display: none !important; /* hide the entire row if it contains .custom-hidden */
+        }
+
+        .forminator-field-select {
+
+            display: flex;
+            flex-direction: column;
+
+            select {
+                border-radius: 0px;
+                outline: none;
+                padding: 10px;
+            }
         }
 
         .forminator-field {

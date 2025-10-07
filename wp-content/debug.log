@@ -1,0 +1,14 @@
+[07-Oct-2025 10:51:33 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:33 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:33 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:41 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:41 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:41 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:47 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:47 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:51:47 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 10:52:00 UTC] Test log entry - if you see this, debug.log works
+[07-Oct-2025 11:06:02 UTC] PHP Warning:  Undefined array key "raw" in /Users/michael/Local Sites/bexley-deaf-centre/app/public/wp-content/themes/bexley-deaf-centre/functions/acf.php on line 114
+[07-Oct-2025 11:06:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/michael/Local Sites/bexley-deaf-centre/app/public/wp-content/themes/bexley-deaf-centre/functions/acf.php on line 114
+[07-Oct-2025 11:06:09 UTC] PHP Warning:  Undefined array key "raw" in /Users/michael/Local Sites/bexley-deaf-centre/app/public/wp-content/themes/bexley-deaf-centre/functions/acf.php on line 114
+[07-Oct-2025 11:06:09 UTC] PHP Warning:  Trying to access array offset on value of type null in /Users/michael/Local Sites/bexley-deaf-centre/app/public/wp-content/themes/bexley-deaf-centre/functions/acf.php on line 114

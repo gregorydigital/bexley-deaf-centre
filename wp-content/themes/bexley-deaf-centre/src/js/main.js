@@ -5,6 +5,7 @@ import {mq, dataLayer} from './base/config.js';
 import initSmoothScroll from './utils/smooth-scroll.js';
 import initWindowScroll from './utils/window-scroll.js';
 import initOnEntry from './utils/in-view.js';
+import initFormChoices from './blocks/form.js';
 
 // Global Imports
 import initMobileNav from './global/nav.js';
@@ -36,6 +37,7 @@ window.onload = function() {
     initFAQ();
     initSliderModal();
     initCardInfo();
+    initFormChoices();
 
     AOS.init({
       duration: 950,
