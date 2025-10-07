@@ -55,6 +55,11 @@
             <?php endif; ?>
          </div>
       </div>
+      <div class="hero__wave">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,64 C360,0 1080,128 1440,64 L1440,100 L0,100 Z" fill="#FFFFFF" />
+         </svg>
+      </div>
    </section>
 
 <?php endif; ?>
