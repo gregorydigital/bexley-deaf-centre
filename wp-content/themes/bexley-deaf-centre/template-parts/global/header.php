@@ -5,43 +5,6 @@
 ?>
 
 <header class="header">
-    <!-- <div class="header__top">
-        <div class="container">
-            <div class="header__top-inner">
-                <div class="social-channels">
-                    <?php if(have_rows('social_repeater', 'options')): ?>
-                        <?php while(have_rows('social_repeater', 'options')): the_row();?>
-                            <?php 
-                                $icon = get_sub_field('icon');
-                                $link = get_sub_field('link');
-                            ?>
-                            <?php if (!empty($icon && !empty($link))) : ?>
-                                <a href="<?php echo esc_url($link) ?>" target="_blank">
-                                    <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt'] ?? ''); ?>" />
-                                </a>
-                            <?php endif; ?>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                </div>
-                <div class="contact-details">
-                    <?php if(!empty($phone)): ?>
-                        <div class="contact-details-box">
-                            <a href="tel:<?php echo esc_html($phone) ?>" target="_blank">
-                                <p><?php echo esc_html($phone); ?></p>
-                            </a>
-                        </div>
-                    <?php endif; ?>
-                    <?php if(!empty($email)): ?>
-                        <div class="contact-details-box">
-                            <a href="mailto:<?php echo esc_html($email); ?>" target="_blank">
-                                <p><?php echo esc_html($email); ?></p>
-                            </a>
-                        </div>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="header__main">
         <div class="container">
             <div class="header__main-inner">
