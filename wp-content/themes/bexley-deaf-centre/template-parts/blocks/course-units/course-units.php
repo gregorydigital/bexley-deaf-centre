@@ -46,8 +46,8 @@
                                         <p class="assessed"><?php echo esc_html($assessed); ?></p>
                                     <?php endif; ?>
                                 </div>
-                                <div class="course-unit-right">
-                                    <?php if(have_rows('unit_list')): ?>
+                                <?php if(have_rows('unit_list')): ?>
+                                    <div class="course-unit-right">
                                         <ul>
                                         <?php while(have_rows('unit_list')): the_row();?>
                                             <?php
@@ -56,8 +56,8 @@
                                             <li><?php echo esc_html($item) ?></li>
                                         <?php endwhile; ?>
                                         </ul>
-                                    <?php endif; ?>
-                                </div>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         <?php endwhile; ?>
                         </div>

@@ -2,6 +2,7 @@
     $title = get_field('title');
     $content = get_field('content');
     $link = get_field('link');
+    $columns = get_field('columns');
     $bg_color = get_field('background_color');
 ?>
 
@@ -11,7 +12,7 @@
 
 <?php else: ?> 
 
-    <section class="icon-repeater padded-mid bg-<?php echo esc_html($bg_color); ?>">
+    <section class="icon-repeater padded-mid bg-<?php echo esc_html($bg_color); ?> columns-<?php echo esc_html($columns); ?>">
         <div class="container">
             <?php if($title): ?>
             <div class="icon-repeater__content">

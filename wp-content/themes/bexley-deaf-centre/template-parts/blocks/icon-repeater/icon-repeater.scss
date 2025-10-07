@@ -14,9 +14,8 @@
     }
 
     &__inner {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(1fr, 1);        
         gap: 30px;
     }
 
@@ -72,10 +71,6 @@
         &__content {
             margin-bottom: 60px;
         }
-
-        &__card {
-            width: calc(50% - 15px);
-        }
     }
 }
 
@@ -83,8 +78,21 @@
 
     .icon-repeater {
 
-        &__card {
-            width: calc(33.33% - 20px);
+        &__inner{
+            grid-template-columns: repeat(3, 1fr);        
+        }
+
+        &.columns-2 {
+            .icon-repeater__inner {
+                margin: 0 100px;
+                grid-template-columns: repeat(2, 1fr);        
+            }
+        }
+
+        &.columns-4 {
+            .icon-repeater__inner {
+                grid-template-columns: repeat(4, 1fr);        
+            }
         }
     }
 }

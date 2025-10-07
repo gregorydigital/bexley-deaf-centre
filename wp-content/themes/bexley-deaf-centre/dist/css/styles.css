@@ -3255,9 +3255,8 @@ section.bg-pattern {
   margin-bottom: 10px;
 }
 .icon-repeater__inner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1);
   gap: 30px;
 }
 .icon-repeater__card {
@@ -3303,13 +3302,17 @@ section.bg-pattern {
   .icon-repeater__content {
     margin-bottom: 60px;
   }
-  .icon-repeater__card {
-    width: calc(50% - 15px);
-  }
 }
 @media screen and (min-width: 1100px) {
-  .icon-repeater__card {
-    width: calc(33.33% - 20px);
+  .icon-repeater__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .icon-repeater.columns-2 .icon-repeater__inner {
+    margin: 0 100px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-repeater.columns-4 .icon-repeater__inner {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .locations__content {
