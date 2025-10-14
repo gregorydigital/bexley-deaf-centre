@@ -6,6 +6,8 @@
     $form_id = get_field('forminator_form_id'); // The selected form ID
     $phone = get_field('phone_number', 'options');
     $email = get_field('email_address', 'options');
+    $address = get_field('address', 'options');
+    $background_type = get_field('background_type');
 ?>
 
 <?php if ( ! empty( $block['data']['_is_preview'] ) ) : ?>
@@ -14,13 +16,18 @@
 
 <?php else: ?>
 
-    <section class='contact-form padded-mid'>
+    <section class='contact-form padded-mid <?php echo esc_html($background_type);?>'>
+        <?php if (!empty($image)) : ?>
+            <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
+        <?php endif; ?>
         <div class='container'>
-            <div class='contact-form__inner'>
+            <div class='contact-form__inner' data-aos="fade-up">
                 <div class="contact-form__left">
-                     <?php if (!empty($image)) : ?>
-                        <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
-                    <?php endif; ?>
+                    <?php if ($form_id) {
+                        echo do_shortcode("[forminator_form id='{$form_id}']");
+                    } ?>                
+                </div>
+                <div class="contact-form__right">
                     <?php if(!empty($title)): ?>
                         <h2><?php echo esc_html($title); ?></h2>
                     <?php endif; ?>
@@ -37,15 +44,12 @@
                             <a href="mailto:<?php echo esc_html($email); ?>" target="_blank"><?php echo esc_html($email); ?></a>
                         </div>
                     <?php endif; ?>
-                </div>
-                <div class="contact-form__right">
-                    <?php if(!empty($form_title)): ?>
-                        <h3><?php echo esc_html($form_title); ?></h3>
+                    <?php if(!empty($address)): ?>
+                        <div class="contact-container address">
+                            <?php echo wp_kses_post($address); ?>
+                        </div>
                     <?php endif; ?>
-                    <?php if ($form_id) {
-                        echo do_shortcode("[forminator_form id='{$form_id}']");
-                    } ?>                
-                    </div>
+                </div>
             </div>
         </div>
     </section>

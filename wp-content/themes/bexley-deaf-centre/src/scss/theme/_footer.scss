@@ -50,8 +50,16 @@
                 margin-bottom: 20px;
             }
 
-            p {
+            p, a {
                 margin-bottom: 0;
+                font-size: rem(18px);
+                color: white;
+            }
+
+            a {
+                &:hover {
+                    color: var(--secondary);
+                }
             }
         }
 
@@ -66,10 +74,10 @@
         .footer-legal {
 
             h4 {
-                font-weight: 500;
+                font-weight: 600;
                 font-size: rem(18px);
                 text-transform: uppercase;
-                color: var(--secondary);
+                color: white;
             }
 
             ul {
@@ -77,6 +85,13 @@
                 list-style: none;
 
                 li {
+
+                    font-weight: 300;
+
+                    a {
+                        font-size: rem(18px);
+                    }
+
                     &:last-of-type {
                         margin-bottom: 0;
                     }

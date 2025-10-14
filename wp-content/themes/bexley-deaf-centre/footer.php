@@ -21,16 +21,18 @@
                 <?php endif; ?>
                 <?php if(!empty($phone)): ?>
                     <a href="tel:<?php echo esc_html($phone) ?>" target="_blank">
-                        <p><?php echo esc_html($phone); ?></p>
+                        <?php echo esc_html($phone); ?>
                     </a>
                 <?php endif; ?>
                 <?php if(!empty($email)): ?>
                     <a href="mailto:<?php echo esc_html($email); ?>" target="_blank">
-                        <p><?php echo esc_html($email); ?></p>
+                        <?php echo esc_html($email); ?>
                     </a>
                 <?php endif; ?>
                 <?php if(!empty($address)): ?>
-                    <?php echo wp_kses_post($address); ?>
+                    <div class="footer-address">
+                        <?php echo wp_kses_post($address); ?>
+                    </div>
                 <?php endif; ?>
                 <?php if(!empty($charity_no)): ?>
                     <p class="charity-number"><?php echo wp_kses_post($charity_no); ?></p>
