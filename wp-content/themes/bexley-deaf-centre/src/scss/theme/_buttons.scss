@@ -2,7 +2,7 @@
 
 .btn, .forminator-button  {
     padding: 12px 28px;
-    background-color: var(--primary-hover);
+    background-color: var(--primary);
     text-decoration: none;
     color: white;
     font-size: rem(16px);
@@ -14,7 +14,7 @@
     font-family: var(--title-font);
 
     &:hover {
-        background-color: var(--primary);
+        background-color: var(--primary-hover);
         color: white;
     }
 

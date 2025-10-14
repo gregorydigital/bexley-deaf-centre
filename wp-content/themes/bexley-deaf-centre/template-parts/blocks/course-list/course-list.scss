@@ -62,6 +62,10 @@
                         display: flex;
                         align-items: center;
                         gap: 4px;
+
+                        p {
+                            font-size: rem(16px);
+                        }
                     }
 
                     svg {

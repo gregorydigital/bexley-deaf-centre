@@ -72,15 +72,29 @@
    &__course {
       padding: 20px;
       border-radius: 4px;
-      background-color: var(--primary);
+      background-color: #FAFAFA;
       z-index: 2;
+   }
+
+   &__course-info {
+
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      img {
+         height: 26px;
+         width: auto;
+      }
 
       p {
-         color: white;
+         color: var(--primary);
+         margin-bottom: 0;
+      }
 
-         &:last-of-type {
-            margin-bottom: 0;
-         }
+      &:last-of-type {
+         margin-bottom: 0;
       }
    }
 }

@@ -40,16 +40,28 @@
             <?php if($course_hero) : ?>
             <div class="hero__course">
                <?php if(!empty($location)): ?>
-                  <p><strong>Location:</strong> <?php echo esc_html($location); ?></p>
+                  <div class="hero__course-info">
+                     <img src="<?php echo esc_url( get_template_directory_uri() . '/images/location.svg' ); ?>">
+                     <p><?php echo esc_html($location); ?></p>
+                  </div>
                <?php endif; ?>
                <?php if(!empty($duration)): ?>
-                  <p><strong>Duration:</strong> <?php echo esc_html($duration); ?></p>
+                  <div class="hero__course-info">
+                     <img src="<?php echo esc_url( get_template_directory_uri() . '/images/calendar.svg' ); ?>">
+                     <p><?php echo esc_html($duration); ?></p>
+                  </div>
                <?php endif; ?>
                <?php if(!empty($delivery)): ?>
-                  <p><strong>Delivery:</strong> <?php echo esc_html($delivery); ?></p>
+                  <div class="hero__course-info">
+                     <img src="<?php echo esc_url( get_template_directory_uri() . '/images/person.svg' ); ?>">
+                     <p><?php echo esc_html($delivery); ?></p>
+                  </div>
                <?php endif; ?>
                <?php if(!empty($certification)): ?>
-                  <p><strong>Certification:</strong> <?php echo esc_html($certification); ?></p>
+                  <div class="hero__course-info">
+                     <img src="<?php echo esc_url( get_template_directory_uri() . '/images/certificate.svg' ); ?>">
+                     <p><?php echo esc_html($certification); ?></p>
+                  </div>
                <?php endif; ?>
             </div>
             <?php endif; ?>

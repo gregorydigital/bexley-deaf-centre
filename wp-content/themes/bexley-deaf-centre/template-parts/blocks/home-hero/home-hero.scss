@@ -9,24 +9,10 @@
       z-index: 0;
    }
 
-   &:before {
-      position: absolute;
-      content: '';
-      right: 0;
-      bottom: 0;
-      height: 280px;
-      width: 70%;
-      background: linear-gradient(220deg,rgba(16, 63, 84, 1) 0%, rgba(53, 130, 166, 1) 67%);
-      border-top-left-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius);
-      background-color: var(--secondary);
-      z-index: 1;
-   }
-
    &__inner {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 90px;
+      gap: 50px;
    }
 
    &__left {
@@ -48,7 +34,6 @@
 
    &__right {
       height: 200px;
-      width: 80%;
       position: relative;
       z-index: 2;
       overflow: hidden;
