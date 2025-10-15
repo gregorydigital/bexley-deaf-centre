@@ -42,14 +42,10 @@
                                 <?php if(!empty($card_text)): ?>
                                     <p><?php echo esc_html($card_text); ?></p>
                                 <?php endif; ?>
-                                <div>
-                                    <p>Read more</p>
-                                </div>
                             </div>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-                
             </div>
         </div>
     </section>
