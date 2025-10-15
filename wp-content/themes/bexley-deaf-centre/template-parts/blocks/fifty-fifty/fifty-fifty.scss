@@ -34,7 +34,6 @@
             margin-bottom: 10px;
             padding-left: 24px;
             position: relative;
-            color: white;
             
             &::after {
                position: absolute;
@@ -52,7 +51,6 @@
       }
    }
 
-   
    &__preheader {
       font-size: 15px;
       text-transform: uppercase;
@@ -75,7 +73,7 @@
 
    &.bg-primary {
 
-      h2, p {
+      h2, p, li {
          color: white;
       }  
 

@@ -2958,7 +2958,6 @@ section.bg-pattern {
   margin-bottom: 10px;
   padding-left: 24px;
   position: relative;
-  color: white;
 }
 .fifty-fifty__left ul li::after {
   position: absolute;
@@ -2989,7 +2988,7 @@ section.bg-pattern {
   width: 100%;
   z-index: 2;
 }
-.fifty-fifty.bg-primary h2, .fifty-fifty.bg-primary p {
+.fifty-fifty.bg-primary h2, .fifty-fifty.bg-primary p, .fifty-fifty.bg-primary li {
   color: white;
 }
 .fifty-fifty.bg-primary .btn {
