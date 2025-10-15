@@ -2958,6 +2958,7 @@ section.bg-pattern {
   margin-bottom: 10px;
   padding-left: 24px;
   position: relative;
+  color: white;
 }
 .fifty-fifty__left ul li::after {
   position: absolute;
