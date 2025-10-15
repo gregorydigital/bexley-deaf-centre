@@ -15,17 +15,19 @@
         <div class='container'>
             <div class='course-units__inner'>
                 <div class="course-units__left">
-                    <?php if (!empty($image)) : ?>
-                        <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="course-units__right">
                     <?php if(!empty($title)): ?>
                         <h2><?php echo esc_html($title); ?></h2>
                     <?php endif; ?>
                     <?php if(!empty($text)): ?>
                         <p><?php echo esc_html($text); ?></p>
                     <?php endif; ?>
+                    <div class="course-units__image">
+                        <?php if (!empty($image)) : ?>
+                            <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="course-units__right">
                     <?php if(have_rows('course_units')): ?>
                         <div class="unit-container">
                         <?php while(have_rows('course_units')): the_row();?>
@@ -36,12 +38,14 @@
                             ?>
                             <div class="course-units__unit">
                                 <div class="course-unit-left">
-                                    <?php if(!empty($unit_title)): ?>
-                                        <h3><?php echo esc_html($unit_title); ?></h3>
-                                    <?php endif; ?>
-                                    <?php if(!empty($unit_subtitle)): ?>
-                                        <p><?php echo esc_html($unit_subtitle); ?></p>
-                                    <?php endif; ?>
+                                    <div class="course-title">
+                                        <?php if(!empty($unit_title)): ?>
+                                            <h3><?php echo esc_html($unit_title); ?></h3>
+                                        <?php endif; ?>
+                                        <?php if(!empty($unit_subtitle)): ?>
+                                            <p><?php echo esc_html($unit_subtitle); ?></p>
+                                        <?php endif; ?>
+                                    </div>
                                     <?php if(!empty($assessed)): ?>
                                         <p class="assessed"><?php echo esc_html($assessed); ?></p>
                                     <?php endif; ?>

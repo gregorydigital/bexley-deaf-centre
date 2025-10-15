@@ -8,7 +8,10 @@
     left: 0;
     width: 100vw;
     transition: top ease-in-out 0.3s, background-color ease-in-out 0.4s;   
-    border-bottom: 1px solid white; 
+
+    &--fill {
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
 
     &__top {
         display: none;
@@ -18,7 +21,6 @@
 
     &__main {
         background-color: var(--primary);
-        border-bottom: 1px solid var(--mid-primary);
         height: var(--header-height);
 
         .header__logo {

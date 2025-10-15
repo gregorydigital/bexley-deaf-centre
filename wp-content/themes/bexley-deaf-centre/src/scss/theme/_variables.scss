@@ -1,17 +1,19 @@
 :root {
 
    // Fonts 
-   --title-font: "Roboto", sans-serif;
-   --para-font: "Nunito", sans-serif;
+   --title-font: "Shippori Mincho", serif;
+   --para-font: "Work Sans", sans-serif;;
    
    // Theme colours
    --black:  #000000;
    --white: #ffffff;
+   --white-light: rgba(255,255,255,0.8);
    --light-grey: #F5F5F5;
    --primary: #30415A;
    --primary-dark: #0a2937;
    --primary-hover: #3582a6;
    --secondary: #63CABC;
+   --secondary-light:rgb(190, 241, 234);
    --alert: #F15C40;
    --secondary-hover: #cf7506;
    --light-blue: #01B9F4;
@@ -27,5 +29,5 @@
    --border-radius: 30px;
    --border-radius-medium: 20px;
    --border-radius-small: 10px;
-   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 8px;
+   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 4px;
 }

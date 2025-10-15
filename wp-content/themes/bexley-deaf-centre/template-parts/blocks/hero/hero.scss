@@ -46,7 +46,7 @@
       gap: 20px;
       
       h1 {
-         font-size: rem(50px);
+         font-size: rem(40px);
          margin-bottom: 0;
       }
 
@@ -71,8 +71,7 @@
 
    &__course {
       padding: 20px;
-      border-radius: 4px;
-      background-color: #FAFAFA;
+      background-color: var(--secondary-light);
       z-index: 2;
    }
 
@@ -129,7 +128,7 @@
       &__content {
          
          h1 {
-            font-size: rem(66px);
+            font-size: rem(54px);
          }
 
          a {

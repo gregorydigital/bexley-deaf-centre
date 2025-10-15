@@ -22,7 +22,7 @@
                 <?php endif; ?>
                 <div class="full-image-cta__content">
                     <?php if(!empty($pre_title)): ?>
-                        <h4><?php echo esc_html($pre_title); ?></h4>
+                        <span><?php echo esc_html($pre_title); ?></span>
                     <?php endif; ?>
                     <?php if(!empty($title)): ?>
                         <h2><?php echo esc_html($title); ?></h2>

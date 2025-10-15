@@ -15,7 +15,6 @@
     &__card {
         position: relative;
         box-shadow: var(--box-shadow);
-        border-radius: 4px;
         overflow: hidden;
 
         .course-info {
@@ -39,6 +38,8 @@
                 background-color: var(--primary);
                 color: white;
                 flex-shrink: 0;
+                font-family: "Shippori Mincho", serif;
+                font-size: rem(22px);
             }
 
             .course-details {

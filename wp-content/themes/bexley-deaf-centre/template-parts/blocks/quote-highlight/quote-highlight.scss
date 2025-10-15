@@ -12,8 +12,6 @@
         top: 80px;
         width: 80%;
         height: calc(100% - 120px);  
-        border-top-right-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
         background-color: var(--primary);
     }
 
@@ -49,7 +47,7 @@
 
     &__quote {
 
-        padding-top: 80px;
+        padding: 50px 0 60px 0;
         z-index: 2;
         width: 75%;
 
@@ -68,54 +66,16 @@
         gap: 30px
     } 
 
-    &__image {
-        display: none;
+    h3 {
+        margin: 30px 0;
+        font-style: italic;
     }
 
-    &__left {
-        position: relative;
-        overflow: hidden;
-        border-radius: var(--border-radius);
-        height: 300px;
-    }
-
-    &__right {
-        width: 100%;
-        text-align: center;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        img {
-            height: 60px;
-            width: 60px;
-        }
-
-        h3 {
-            margin: 30px 0;
-            font-style: italic;
-        }
-    }
 }
 
 @include breakpoint(sm) {
 
     .quote-highlight {
-
-        &__image {
-            display: block;
-            position: absolute;
-            overflow: hidden;
-            right: 60%;
-            top: 50%;
-            transform: translateY(-50%);
-            height: calc(100% - 60px);
-            width: 40%;
-            max-width: 1500px;
-            border-bottom-right-radius: var(--border-radius);
-            border-top-right-radius: var(--border-radius);
-        }
 
         &__inner {
             flex-direction: row;
@@ -134,11 +94,6 @@
 
         &__quote-icon { 
             right: 140px;
-        }
-
-        &__right-inner {
-            overflow: clip;
-            position: relative;
         }
 
         &.align-left {

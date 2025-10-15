@@ -17,25 +17,30 @@
         grid-template-columns: repeat(1fr, 1);
     }
 
-    &__left {
+    &__image {
         position: relative;
         overflow: hidden;
-        border-radius: var(--border-radius-small);
         height: 300px;
         box-shadow: var(--box-shadow);
     }
 
     .unit-container {
-        margin-top: 40px;
         display: flex;
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .course-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
         gap: 20px;
     }
 
     .assessed {
         padding-left: 24px;
         position: relative;
-        margin-left: auto;
+        // margin-left: auto;
         font-size: 17px;
         margin-top: 10px;
 
@@ -60,22 +65,19 @@
     }
 
     &__unit {
-        border: 1px solid rgba(255,255,255,0.2);
         background-color: #374961;
-        padding: 18px;
         display: grid;
         grid-template-columns: repeat(1fr, 1);
-        border-radius: 4px;
-        gap: 20px;
+        box-shadow: var(--box-shadow);
 
         h3 {
-            margin-bottom: 10px;
-            color: var(--secondary);
+            margin-bottom: 0px;
+            color: white;
         }
 
         p {
             margin-bottom: 0;
-            color: white;
+            color: var(--white-light);
             font-size: rem(20px);
         }
 
@@ -87,31 +89,44 @@
             list-style: none;
 
             li {
-                padding: 4px 12px 4px 28px;
-                color: white;
+                padding: 4px 12px 4px 30px;
+                color: var(--primary);
                 margin-bottom: 0;
                 font-size: rem(18px);
                 position: relative;
-                background-color: white;
-                color: var(--primary-dark);
 
                 &::before {
                     content: '';
                     position: absolute;
                     left: 6px;
                     top: 6px;
-                    height: 16px;
-                    width: 16px;
-                    background-size: contain;
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 50%;
+                    background-color: var(--secondary);
+                    background-size: 16px 16px;
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4.89163 13.2687L9.16582 17.5427L18.7085 8' stroke='%2363CABC' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");                }
+                    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4.89163 13.2687L9.16582 17.5427L18.7085 8' stroke='%23000000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");                }
             }
+        }
+
+        .course-unit-left {
+            padding: 18px;
+
+            h3 {
+                color: white;
+            }
+        }
+
+        .course-unit-right {
+            padding: 18px;
+            background-color: white;
         }
     }
 }
 
-@include breakpoint(md) {
+@include breakpoint(sm) {
     .course-units {
 
         &__inner {
@@ -121,7 +136,15 @@
 
         &__left {
             height: unset;
-            max-height: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__image {
+            margin-top: 20px;
+            height: unset;
+            max-height: 500px;
+            flex-grow: 1;
         }
 
         &__right {
@@ -134,6 +157,8 @@
 
         .course-unit-left {
             display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
             align-items: baseline;
             gap: 20px;
 

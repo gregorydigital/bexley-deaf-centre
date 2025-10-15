@@ -12,7 +12,6 @@
 
         > div {
             padding: 30px 0;
-            border-bottom: 1px solid var(--secondary);
         }
 
         a {
@@ -52,6 +51,7 @@
 
             p, a {
                 margin-bottom: 0;
+                font-weight: 300;
                 font-size: rem(18px);
                 color: white;
             }
@@ -65,7 +65,6 @@
 
         .charity-number {
             font-size: rem(15px);
-            font-weight: 600;
             color: white;
         }
 
@@ -76,8 +75,7 @@
             h4 {
                 font-weight: 600;
                 font-size: rem(18px);
-                text-transform: uppercase;
-                color: white;
+                color: var(--secondary);
             }
 
             ul {

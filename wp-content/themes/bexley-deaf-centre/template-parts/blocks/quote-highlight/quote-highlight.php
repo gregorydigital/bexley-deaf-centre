@@ -25,7 +25,7 @@
         </div>
         <div class='container'>
             <div class='quote-highlight__inner'>
-                <div class="quote-highlight__quote padded-mid" data-aos="fade-up" data-aos-delay="200" >
+                <div class="quote-highlight__quote" data-aos="fade-up" data-aos-delay="200" >
                     <?php if(!empty($quote)): ?>
                         <h3><?php echo esc_html($quote); ?></h3>
                     <?php endif; ?>

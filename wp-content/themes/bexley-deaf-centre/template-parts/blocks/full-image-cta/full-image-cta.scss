@@ -7,8 +7,6 @@
         padding: 30px 30px 100px 30px;
         position: relative;
         overflow: hidden;
-        border-radius: var(--border-radius);
-
 
         &:before {
             position: absolute;
@@ -18,7 +16,7 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background: linear-gradient(90deg,rgba(000, 000, 000, 0.7) 0%, rgba(000, 000, 000, 0.26) 67%, rgba(0, 0, 0, 0) 100%);        
+            background: linear-gradient(90deg,rgba(000, 000, 000, 0.7) 0%, rgba(000, 000, 000, 0.36) 67%, rgba(0, 0, 0, 0) 100%);        
         }
     }
 
@@ -27,10 +25,15 @@
         color: white;
         z-index: 1;
 
-        h4 {
+        span {
             font-weight: 600;
+            color: var(--secondary);
             font-size: 14px;
             text-transform: uppercase;
+        }
+
+        h2 {
+            color: white;
         }
 
         .btn {

@@ -11,7 +11,7 @@
     &__card {
         width: 100%;
         box-shadow: var(--box-shadow);  
-        border-radius: var(--border-radius-small);
+        // border-radius: var(--border-radius-small);
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -20,8 +20,8 @@
     &__card-image {
         position: relative;
         overflow: hidden;
-        border-top-left-radius: var(--border-radius-small);
-        border-top-right-radius: var(--border-radius-small);
+        // border-top-left-radius: var(--border-radius-small);
+        // border-top-right-radius: var(--border-radius-small);
         height: 250px;
 
         &:after {

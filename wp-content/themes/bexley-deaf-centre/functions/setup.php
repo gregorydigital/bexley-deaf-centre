@@ -168,17 +168,17 @@ add_action( 'admin_enqueue_scripts', 'load_admin_styles' );
 /**
  * Enqueue Google Font for both frontend and Block Editor.
  */
-function mytheme_enqueue_jost_font() {
+function mytheme_enqueue_font() {
     // The URL for the Jost Google Font
-    $font_url = 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
+    $font_url = 'https://fonts.googleapis.com/css2?family=Shippori+Mincho&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap';
     
     // Enqueue for the frontend
-    wp_enqueue_style('mytheme-jost-font-frontend', $font_url, array(),  null );
+    wp_enqueue_style('mytheme-font-frontend', $font_url, array(),  null );
 
     // Enqueue the same font for the Block Editor
-    wp_enqueue_style('mytheme-jost-font-editor', $font_url, array(), null);
+    wp_enqueue_style('mytheme-font-editor', $font_url, array(), null);
 }
-add_action( 'enqueue_block_assets', 'mytheme_enqueue_jost_font' );
+add_action( 'enqueue_block_assets', 'mytheme_enqueue_font' );
 
 // Register navigation menus
 function gregory_digital_register_menus() {
