@@ -1,0 +1,66 @@
+@use '../../../src/scss/theme/index' as *;
+
+.hero-cards {
+
+    background-color: white !important;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__card {
+
+        padding: 30px 30px 40px 30px;
+        background-color: var(--primary);
+
+        h3, p {
+            color: white;
+        }
+
+        p {
+            margin-bottom: 36px;
+        }
+
+        &:first-of-type {
+
+            h3, p {
+                color: var(--primary);
+            }
+
+            background-color: var(--secondary);
+        }
+
+        &:last-of-type {
+            background-color: var(--alert);
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .hero-cards {
+
+        &__card {
+            padding: 50px 40px;
+        }
+
+        &__inner {
+            z-index: 2;
+            position: relative;
+            margin-top: -150px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .hero-cards {
+        &__inner {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__card {
+            padding: 50px 40px;
+        }
+    }
+}

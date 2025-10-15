@@ -3480,6 +3480,52 @@ section.bg-pattern {
     align-self: flex-start;
   }
 }
+.hero-cards {
+  background-color: white !important;
+}
+.hero-cards__inner {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.hero-cards__card {
+  padding: 30px 30px 40px 30px;
+  background-color: var(--primary);
+}
+.hero-cards__card h3, .hero-cards__card p {
+  color: white;
+}
+.hero-cards__card p {
+  margin-bottom: 36px;
+}
+.hero-cards__card:first-of-type {
+  background-color: var(--secondary);
+}
+.hero-cards__card:first-of-type h3, .hero-cards__card:first-of-type p {
+  color: var(--primary);
+}
+.hero-cards__card:last-of-type {
+  background-color: var(--alert);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-cards__card {
+    padding: 50px 40px;
+  }
+  .hero-cards__inner {
+    z-index: 2;
+    position: relative;
+    margin-top: -150px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .hero-cards__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-cards__card {
+    padding: 50px 40px;
+  }
+}
 .home-hero {
   position: relative;
   overflow: hidden;
@@ -3522,8 +3568,7 @@ section.bg-pattern {
 
 @media screen and (min-width: 768px) {
   .home-hero {
-    height: 600px;
-    padding-top: 30px;
+    padding: 30px 0 120px 0;
   }
   .home-hero:before {
     bottom: unset;
