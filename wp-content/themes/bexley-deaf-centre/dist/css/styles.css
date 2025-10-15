@@ -3494,6 +3494,9 @@ section.bg-pattern {
 .hero-cards__card h3, .hero-cards__card p {
   color: white;
 }
+.hero-cards__card h3 {
+  font-size: 2.4rem;
+}
 .hero-cards__card p {
   margin-bottom: 36px;
 }
@@ -3604,6 +3607,7 @@ section.bg-pattern {
   width: 100%;
   padding: 20px 34px;
   box-shadow: var(--box-shadow);
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
