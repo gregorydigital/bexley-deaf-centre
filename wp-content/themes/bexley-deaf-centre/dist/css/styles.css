@@ -3012,11 +3012,11 @@ section.bg-pattern {
 }
 .fifty-fifty__right {
   overflow: hidden;
-  border-radius: var(--border-radius);
 }
 .fifty-fifty__right-inner {
   position: relative;
   overflow: hidden;
+  border-radius: var(--border-radius);
   height: 400px;
   width: 100%;
   z-index: 2;
