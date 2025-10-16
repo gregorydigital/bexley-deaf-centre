@@ -146,6 +146,10 @@
         display: flex;
         align-items: center;
 
+        form {
+            margin-bottom: 0 !important;
+        }
+
         .bsl-select {
             border-radius: 0px;
             outline: none;

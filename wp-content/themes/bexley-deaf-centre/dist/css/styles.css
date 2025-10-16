@@ -2527,6 +2527,9 @@ section.bg-pattern {
   display: flex;
   align-items: center;
 }
+.contact-form__left form {
+  margin-bottom: 0 !important;
+}
 .contact-form__left .bsl-select {
   border-radius: 0px;
   outline: none;
