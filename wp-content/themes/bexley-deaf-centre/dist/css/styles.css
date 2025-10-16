@@ -2548,9 +2548,13 @@ section.bg-pattern {
   display: none;
 }
 .contact-form__left #acf-course-select {
+  color: #757575 !important;
   font-size: 16px;
   font-family: inherit;
   font-weight: 400;
+}
+.contact-form__left #acf-course-select::placeholder {
+  color: #757575 !important;
 }
 .contact-form__left .forminator-row:has(.custom-hidden) {
   display: none !important; /* hide the entire row if it contains .custom-hidden */
