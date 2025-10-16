@@ -2544,6 +2544,14 @@ section.bg-pattern {
 .contact-form__left .forminator-row .custom-hidden {
   display: none !important;
 }
+.contact-form__left #select-1 label {
+  display: none;
+}
+.contact-form__left #acf-course-select {
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+}
 .contact-form__left .forminator-row:has(.custom-hidden) {
   display: none !important; /* hide the entire row if it contains .custom-hidden */
 }
