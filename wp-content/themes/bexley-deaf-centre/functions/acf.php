@@ -102,7 +102,6 @@
             }
     
             // Render standalone dropdown
-            $html  = '<label for="acf-course-select">Select a Course of Interest</label>';
             $html .= '<select id="acf-course-select" class="acf-course-select">';
             $html .= $options_html;
             $html .= '</select>';
