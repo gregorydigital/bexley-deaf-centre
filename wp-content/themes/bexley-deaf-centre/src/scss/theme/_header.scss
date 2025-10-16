@@ -44,7 +44,7 @@
             @include max-width(md) {
                 position: fixed;
                 background-color: var(--primary);
-                top: calc( var(--header-height) + 1px );
+                top: var(--header-height);
                 right: -100%;
                 width: 90%;
                 height: calc(100vh - var(--header-height) - 1px);
