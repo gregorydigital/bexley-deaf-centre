@@ -1691,6 +1691,9 @@ body.block-editor-page [data-aos] {
   .header__main-inner .main-nav-container .contact-details a {
     color: white;
   }
+  .header__main-inner .main-nav-container .contact-details-box {
+    margin-bottom: 30px;
+  }
   .header__main-inner .main-nav-container .social-mobile-container {
     border-top: 1px solid var(--primary);
     margin-top: 20px;
