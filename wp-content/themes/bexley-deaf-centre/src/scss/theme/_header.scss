@@ -73,7 +73,11 @@
                 .contact-details {
                     border-top: 1px solid var(--primary);
                     margin-top: 20px;
-                    padding-top: 20px;
+                    padding: 20px 30px 0 30px;
+
+                    a {
+                        color: white;
+                    }
                 }
 
                 .social-mobile-container {

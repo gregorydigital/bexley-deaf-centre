@@ -24,14 +24,14 @@
                         <?php if(!empty($phone)): ?>
                             <div class="contact-details-box">
                                 <a href="tel:<?php echo esc_html($phone) ?>" target="_blank">
-                                    <p><?php echo esc_html($phone); ?></p>
+                                    <?php echo esc_html($phone); ?>
                                 </a>
                             </div>
                         <?php endif; ?>
                         <?php if(!empty($email)): ?>
                             <div class="contact-details-box">
                                 <a href="mailto:<?php echo esc_html($email); ?>" target="_blank">
-                                    <p><?php echo esc_html($email); ?></p>
+                                    <?php echo esc_html($email); ?>
                                 </a>
                             </div>
                         <?php endif; ?>
