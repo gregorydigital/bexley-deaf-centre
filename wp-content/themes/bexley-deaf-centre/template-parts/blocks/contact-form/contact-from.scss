@@ -4,6 +4,10 @@
 
     position: relative;
 
+    &.no-pad-top {
+        padding-top: 0 !important;
+    }
+
     &.image {
         &:after {
             position: absolute;
@@ -24,7 +28,7 @@
         background-color: white;
         position: relative;
         z-index: 2;
-        // border-radius: 4px;
+        border-radius: var(--border-radius);
         overflow: hidden;
     }
 

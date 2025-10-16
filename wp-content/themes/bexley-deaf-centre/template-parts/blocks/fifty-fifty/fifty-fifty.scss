@@ -61,6 +61,7 @@
    
    &__right {
       overflow: hidden;
+      border-radius: var(--border-radius);
    }
 
    &__right-inner {

@@ -8,6 +8,7 @@
     $email = get_field('email_address', 'options');
     $address = get_field('address', 'options');
     $background_type = get_field('background_type');
+    $remove_padding = get_field('remove_top_padding');
 ?>
 
 <?php if ( ! empty( $block['data']['_is_preview'] ) ) : ?>
@@ -16,7 +17,7 @@
 
 <?php else: ?>
 
-    <section class='contact-form padded-mid <?php echo esc_html($background_type);?>'>
+    <section class='contact-form padded-mid <?php echo esc_html($background_type);?> <?php echo $remove_padding ? 'no-pad-top' : ''; ?>'>
         <?php if (!empty($image)) : ?>
             <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
         <?php endif; ?>

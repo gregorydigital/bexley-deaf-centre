@@ -13,6 +13,8 @@
         width: 80%;
         height: calc(100% - 120px);  
         background-color: var(--primary);
+        border-bottom-right-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
     }
 
     &__quote-icon {

@@ -108,7 +108,7 @@
                             background-color: var(--secondary);
                             color: white !important;
                             transition: background-color 0.3s ease;
-                            border-radius: 2px;
+                            border-radius: var(--border-radius);
 
                             &:after {
                                 display: none;

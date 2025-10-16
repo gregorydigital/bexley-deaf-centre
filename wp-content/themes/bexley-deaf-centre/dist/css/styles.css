@@ -1520,6 +1520,7 @@ address {
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: var(--title-font);
+  border-radius: var(--border-radius);
 }
 .btn:hover, .forminator-button:hover {
   background-color: var(--primary-hover);
@@ -1714,7 +1715,7 @@ body.block-editor-page [data-aos] {
   background-color: var(--secondary);
   color: white !important;
   transition: background-color 0.3s ease;
-  border-radius: 2px;
+  border-radius: var(--border-radius);
 }
 .header__main-inner .main-nav-container ul li.custom-cta a:after {
   display: none;
@@ -2412,6 +2413,9 @@ section.bg-pattern {
 .contact-form {
   position: relative;
 }
+.contact-form.no-pad-top {
+  padding-top: 0 !important;
+}
 .contact-form.image:after {
   position: absolute;
   content: "";
@@ -2429,6 +2433,7 @@ section.bg-pattern {
   background-color: white;
   position: relative;
   z-index: 2;
+  border-radius: var(--border-radius);
   overflow: hidden;
 }
 .contact-form__right {
@@ -2590,6 +2595,7 @@ section.bg-pattern {
   position: relative;
   box-shadow: var(--box-shadow);
   overflow: hidden;
+  border-radius: var(--border-radius);
 }
 .course-list__card .course-info {
   display: flex;
@@ -2715,6 +2721,8 @@ section.bg-pattern {
   display: grid;
   grid-template-columns: repeat(1fr, 1);
   box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 .course-units__unit h3 {
   margin-bottom: 0px;
@@ -2816,6 +2824,7 @@ section.bg-pattern {
 }
 .faq-section .faq-row {
   background-color: white;
+  border-radius: var(--border-radius);
   padding: 16px 24px;
   color: var(--primary);
   transition: background-color 0.3s ease-in;
@@ -2978,6 +2987,7 @@ section.bg-pattern {
 }
 .fifty-fifty__right {
   overflow: hidden;
+  border-radius: var(--border-radius);
 }
 .fifty-fifty__right-inner {
   position: relative;
@@ -3051,10 +3061,10 @@ section.bg-pattern {
   }
 }
 .full-image-cta__inner {
-  min-height: 400px;
   padding: 30px 30px 100px 30px;
   position: relative;
   overflow: hidden;
+  border-radius: var(--border-radius);
 }
 .full-image-cta__inner:before {
   position: absolute;
@@ -3064,7 +3074,26 @@ section.bg-pattern {
   top: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.36) 67%, rgba(0, 0, 0, 0) 100%);
+  background: var(--primary);
+  opacity: 0.86;
+}
+.full-image-cta__inner.bg-inner-turquoise:before {
+  background: var(--secondary);
+}
+.full-image-cta__inner.bg-inner-turquoise span {
+  color: white;
+}
+.full-image-cta__inner.bg-inner-turquoise h2 {
+  color: var(--primary);
+}
+.full-image-cta__inner.bg-inner-turquoise p {
+  color: rgb(50, 50, 50);
+}
+.full-image-cta__inner.bg-inner-black:before {
+  background: rgb(0, 0, 0);
+}
+.full-image-cta__inner.bg-inner-red:before {
+  background: var(--alert);
 }
 .full-image-cta__content {
   position: relative;
@@ -3078,6 +3107,7 @@ section.bg-pattern {
   text-transform: uppercase;
 }
 .full-image-cta__content h2 {
+  margin-top: 6px;
   color: white;
 }
 .full-image-cta__content .btn {
@@ -3110,7 +3140,6 @@ section.bg-pattern {
   }
   .full-image-cta__inner {
     padding: 40px;
-    min-height: 450px;
   }
   .full-image-cta__content {
     width: 360px;
@@ -3221,6 +3250,7 @@ section.bg-pattern {
 .general-cards__card {
   width: 100%;
   box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -3228,6 +3258,8 @@ section.bg-pattern {
 .general-cards__card-image {
   position: relative;
   overflow: hidden;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
   height: 250px;
 }
 .general-cards__card-image:after {
@@ -3434,6 +3466,7 @@ section.bg-pattern {
   padding: 20px;
   background-color: var(--secondary-light);
   z-index: 2;
+  border-radius: var(--border-radius);
 }
 .hero__course-info {
   margin-bottom: 14px;
@@ -3479,16 +3512,18 @@ section.bg-pattern {
   }
 }
 .hero-cards {
-  background-color: white !important;
+  background-color: rgb(230, 230, 230);
 }
 .hero-cards__inner {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 .hero-cards__card {
   position: relative;
   overflow: hidden;
   padding: 30px 30px 40px 30px;
+  border-radius: var(--border-radius);
 }
 .hero-cards__card:before {
   position: absolute;
@@ -3577,6 +3612,7 @@ section.bg-pattern {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  border-radius: var(--border-radius);
 }
 .home-hero__buttons {
   display: flex;
@@ -3628,6 +3664,8 @@ section.bg-pattern {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 .icon-repeater__card h3 {
   font-size: 1.3rem;
@@ -3789,6 +3827,8 @@ section.bg-pattern {
   width: 80%;
   height: calc(100% - 120px);
   background-color: var(--primary);
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 .quote-highlight__quote-icon {
   position: absolute;

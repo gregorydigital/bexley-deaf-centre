@@ -3,10 +3,10 @@
 .full-image-cta {
 
     &__inner {
-        min-height: 400px;
         padding: 30px 30px 100px 30px;
         position: relative;
         overflow: hidden;
+        border-radius: var(--border-radius);
 
         &:before {
             position: absolute;
@@ -16,7 +16,38 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background: linear-gradient(90deg,rgba(000, 000, 000, 0.7) 0%, rgba(000, 000, 000, 0.36) 67%, rgba(0, 0, 0, 0) 100%);        
+            background: var(--primary);
+            opacity: 0.86;    
+        }
+
+        &.bg-inner-turquoise {
+            &:before {
+                background: var(--secondary);
+            }
+
+            span {
+                color: white;
+            }
+
+            h2 {
+                color: var(--primary);
+            }
+
+            p {
+                color: rgba(50,50,50,1);
+            }
+        }
+
+        &.bg-inner-black {
+            &:before {
+                background: rgba(0,0,0);
+            }
+        }
+
+        &.bg-inner-red {
+            &:before {
+                background: var(--alert);
+            }
         }
     }
 
@@ -33,6 +64,7 @@
         }
 
         h2 {
+            margin-top: 6px;
             color: white;
         }
 
@@ -81,7 +113,6 @@
         
         &__inner {
             padding: 40px;
-            min-height: 450px;
         }
     
         &__content {
@@ -95,9 +126,7 @@
     .full-image-cta {
 
         &__inner {
-
             padding: 50px;
-
         }
     }
 }

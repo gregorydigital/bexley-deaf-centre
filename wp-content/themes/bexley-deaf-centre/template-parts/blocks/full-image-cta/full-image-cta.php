@@ -6,6 +6,7 @@
     $link = get_field('link');
     $align = get_field('align_center');
     $bg_color = get_field('background_color');
+    $inner_color = get_field('inner_color')
 ?>
 
 <?php if ( ! empty( $block['data']['_is_preview'] ) ) : ?>
@@ -16,7 +17,7 @@
 
     <section class='full-image-cta padded-mid <?php echo $align ? 'align-center' : '' ?> bg-<?php echo esc_html($bg_color) ?>'>
         <div class='container'>
-            <div class='full-image-cta__inner' data-aos="fade-up">
+            <div class='full-image-cta__inner bg-inner-<?php echo esc_html($inner_color); ?>' data-aos="fade-up">
                 <?php if (!empty($image)) : ?>
                     <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
                 <?php endif; ?>
@@ -35,7 +36,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                     ?>
-                        <a class='btn btn-white' href='<?php echo esc_url( $link_url ); ?>' target='<?php echo esc_attr( $link_target ); ?>'><?php echo esc_html( $link_title ); ?></a>
+                        <a class='btn btn--white' href='<?php echo esc_url( $link_url ); ?>' target='<?php echo esc_attr( $link_target ); ?>'><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
                 </div>
             </div>
