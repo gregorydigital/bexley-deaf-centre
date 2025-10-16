@@ -2450,6 +2450,9 @@ section.bg-pattern {
   color: white;
   z-index: 1;
 }
+.contact-form__right h2 {
+  font-size: 2.5rem;
+}
 .contact-form__right p {
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.8);
@@ -2474,7 +2477,7 @@ section.bg-pattern {
   width: 100%;
 }
 .contact-form__right .contact-container {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .contact-form__right .contact-container a {
   position: relative;
