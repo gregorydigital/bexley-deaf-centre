@@ -31,6 +31,16 @@
             margin-bottom: 0;
         }
     }
+
+    &.bg-primary {
+        h2, h3 {
+            color: white;
+        }
+
+        p {
+            color: var(--secondary);
+        }
+    }
 }
 
 @include breakpoint(sm) {
@@ -54,6 +64,10 @@
         &.three-column {
 
             .simple-team__inner {
+                margin: 0 100px;
+            }
+
+            .simple-team__content {
                 margin: 0 100px;
             }
 

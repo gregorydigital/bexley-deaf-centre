@@ -4167,6 +4167,12 @@ section.bg-pattern {
 .simple-team__card-content p {
   margin-bottom: 0;
 }
+.simple-team.bg-primary h2, .simple-team.bg-primary h3 {
+  color: white;
+}
+.simple-team.bg-primary p {
+  color: var(--secondary);
+}
 
 @media screen and (min-width: 768px) {
   .simple-team__inner {
@@ -4181,6 +4187,9 @@ section.bg-pattern {
     width: calc(25% - 22.5px);
   }
   .simple-team.three-column .simple-team__inner {
+    margin: 0 100px;
+  }
+  .simple-team.three-column .simple-team__content {
     margin: 0 100px;
   }
   .simple-team.three-column .simple-team__card {
