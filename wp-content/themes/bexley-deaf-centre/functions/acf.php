@@ -41,7 +41,7 @@
         ];
 
         // Check the post type
-        if ($editor_context->post && ($editor_context->post->post_type === 'blog' || $editor_context->post->post_type === 'insight' || $editor_context->post->post_type === 'customer')) {
+        if ($editor_context->post && ($editor_context->post->post_type === 'post')) {
             // For 'resource' and 'news' post types, allow only specified core blocks
             $allowed_blocks = $alwaysAllowedCoreBlocks;
         } else {

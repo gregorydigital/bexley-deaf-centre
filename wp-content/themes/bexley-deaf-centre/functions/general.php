@@ -52,6 +52,16 @@ add_action('init', function() {
 
 add_theme_support( 'title-tag' );
 
+function get_estimated_reading_time($post_id = null) {
+  $post_id = $post_id ?: get_the_ID();
+  $content = get_post_field('post_content', $post_id);
+  $word_count = str_word_count(strip_tags($content));
+  $words_per_minute = 200; // Adjust as needed
+
+  $minutes = ceil($word_count / $words_per_minute);
+  return $minutes . ' min read';
+}
+
 // Change the WordPress login logo
 function my_custom_login_logo() { ?>
     <style type="text/css">

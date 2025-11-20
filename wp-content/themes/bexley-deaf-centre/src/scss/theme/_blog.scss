@@ -1,0 +1,98 @@
+@use './index' as *;
+
+.blog-container {
+    padding-top: 40px;
+
+    a {
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+}
+
+.posts-grid {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+
+    .post-card {
+
+        h3, a {
+            color: black;
+        }
+
+        .img-container {
+            height: 240px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .post-card-bottom {
+
+            a {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+
+                svg {
+                    width: 30px;
+                    position: relative;
+                    right: 10px;
+                    transition: right 0.3s ease;
+                }
+            }
+        }
+
+        &:hover {
+
+            h3, a {
+                text-decoration: underline ;
+            }
+
+            .post-card-bottom {
+
+                a {
+                    svg {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    } 
+}
+
+@include breakpoint(md) {
+
+    .blog-container {
+        padding-top: 60px;
+    }
+
+    .posts-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 60px 0;
+    } 
+}

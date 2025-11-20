@@ -10,6 +10,7 @@
 @use './theme/fonts';
 @use './theme/typography';
 @use './theme/buttons';
+@use './theme/blog';
 @use './theme/forms';
 @use './theme/layout';
 @use './theme/header';
@@ -17,5 +18,6 @@
 @use './theme/footer';
 @use './theme/posts';
 @use './theme/error-page';
+@use './theme/single-post';
 
 // Block files - these get loaded in automaticaly through the Gulp file 

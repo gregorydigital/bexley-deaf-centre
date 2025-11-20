@@ -190,3 +190,8 @@ function gregory_digital_register_menus() {
     ) );
 }
 add_action( 'init', 'gregory_digital_register_menus' );
+
+// Ensure thumbnails are enabled globally (if not already in your theme)
+add_action('after_setup_theme', function () {
+    add_theme_support('post-thumbnails');
+});
