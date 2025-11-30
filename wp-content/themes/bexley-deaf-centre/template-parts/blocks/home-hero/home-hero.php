@@ -1,7 +1,9 @@
 <?php 
    $title = get_field('title');
    $text = get_field('text');
+   $image_type = get_field('image_type');
    $image = get_field('image');
+   $video = get_field('video');
    $bg_image = get_field('background_image');
    $cta_1 = get_field('cta_1');
    $cta_1_color = get_field('cta_1_color');
@@ -46,8 +48,27 @@
                </div>
             </div>
             <div class="home-hero__right">
-               <?php if (!empty($image)) : ?>
-                   <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
+               <?php if($image_type === 'image') :?>
+                  <?php if (!empty($image)) : ?>
+                     <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
+                  <?php endif; ?>
+               <?php else : ?>
+                  <?php if($video) :?>
+                     <?php preg_match('/vimeo\.com\/(\d+)/', $video, $matches);
+                     $id = $matches[1] ?? '';
+                     if ($id) : ?>
+                        <div class="video-wrapper">
+                           <iframe 
+                              src="https://player.vimeo.com/video/<?php echo $id; ?>?autoplay=1&muted=1&loop=1&background=1&title=0&byline=0&portrait=0"
+                              frameborder="0"
+                              webkitallowfullscreen
+                              mozallowfullscreen
+                              allowfullscreen
+                              allow="autoplay; fullscreen"
+                           ></iframe>
+                        </div>
+                     <?php endif; ?>
+                  <?php endif; ?>
                <?php endif; ?>
             </div>
          </div>

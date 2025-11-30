@@ -73,6 +73,8 @@
 @include breakpoint(sm) {
     .hero-cards {
 
+        margin-top: 100px;
+
         &__card {
             padding: 50px 40px;
         }
@@ -88,6 +90,9 @@
 
 @include breakpoint(md) {
     .hero-cards {
+
+        margin-top: 130px;
+
         &__inner {
             grid-template-columns: repeat(3, 1fr);
         }
