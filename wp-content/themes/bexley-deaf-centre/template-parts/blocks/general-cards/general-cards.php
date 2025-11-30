@@ -41,11 +41,11 @@
                             <?php endif; ?>
                             <?php if(!empty($card_text)): ?>
                             <div class="general-cards__card-content">
+                                <?php if (!empty($icon)) : ?>
                                 <div class="general-cards__card-icon">
-                                    <?php if (!empty($icon)) : ?>
-                                        <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt'] ?? ''); ?>" />
-                                    <?php endif; ?>
+                                    <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt'] ?? ''); ?>" />
                                 </div>
+                                <?php endif; ?>
                                 <?php if(!empty($card_title)): ?>
                                     <h3><?php echo esc_html($card_title); ?></h3>
                                 <?php endif; ?>
