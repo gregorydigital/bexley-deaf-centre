@@ -46,9 +46,12 @@
 
         h3 {
             margin-bottom: 0;
+            color: var(--primary) !important;
         }
 
         p {
+            color: var(--text-color) !important; 
+
             &:last-of-type {
                 margin-bottom: 0;
             }
