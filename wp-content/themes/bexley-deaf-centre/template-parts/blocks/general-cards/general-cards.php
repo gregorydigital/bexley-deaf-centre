@@ -40,7 +40,7 @@
                             </div>
                             <?php endif; ?>
                             <?php if(!empty($card_text)): ?>
-                            <div class="general-cards__card-content">
+                            <div class="general-cards__card-content <?php echo $icon ? 'icon-card' : '' ; ?>">
                                 <?php if (!empty($icon)) : ?>
                                 <div class="general-cards__card-icon">
                                     <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt'] ?? ''); ?>" />

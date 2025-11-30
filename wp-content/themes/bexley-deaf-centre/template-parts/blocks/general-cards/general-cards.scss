@@ -62,6 +62,10 @@
         .btn {
             margin-top: auto;
         }
+
+        &.icon-card {
+            padding: 20px 20px 20px 20px;
+        }
     }
 
     &__card-icon {
@@ -113,6 +117,10 @@
 
         &__card-content {
             padding: 50px 24px 24px 24px;
+
+            &.icon-card {
+                padding: 24px 24px 24px 24px;
+            }
         }
     }
 }
