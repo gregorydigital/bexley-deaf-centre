@@ -3988,7 +3988,7 @@ section.bg-pattern {
 
 @media screen and (min-width: 768px) {
   .home-hero {
-    padding: 30px 0 120px 0;
+    padding: 50px 0 50px 0;
   }
   .home-hero:before {
     bottom: unset;
