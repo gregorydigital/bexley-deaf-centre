@@ -4605,6 +4605,9 @@ section.bg-pattern {
   background-color: black;
   color: white !important;
 }
+.title-text.bg-primary h2, .title-text.bg-primary p {
+  color: white !important;
+}
 .title-text .title-text__inner {
   max-width: 800px;
 }

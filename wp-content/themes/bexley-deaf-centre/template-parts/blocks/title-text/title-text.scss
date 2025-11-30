@@ -7,7 +7,12 @@
     &.bg-black {
         background-color: black;
         color: white !important;
+    }
 
+    &.bg-primary {
+        h2, p {
+            color: white !important;
+        }
     }
 
     .title-text__inner {
