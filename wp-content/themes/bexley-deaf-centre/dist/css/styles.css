@@ -3683,6 +3683,9 @@ section.bg-pattern {
   display: flex;
   justify-content: center;
 }
+.general-cards.bg-primary h2, .general-cards.bg-primary p {
+  color: white !important;
+}
 
 @media screen and (min-width: 768px) {
   .general-cards__inner {
@@ -4065,6 +4068,9 @@ section.bg-pattern {
 .icon-repeater__link {
   display: flex;
   justify-content: center;
+}
+.icon-repeater.bg-primary h2, .icon-repeater.bg-primary p {
+  color: white !important;
 }
 
 @media screen and (min-width: 768px) {
