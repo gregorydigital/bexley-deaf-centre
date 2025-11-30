@@ -36,7 +36,7 @@
     }
 
     &__card-content {
-        padding: 50px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
         position: relative;
         text-align: center;
         flex-grow: 1;
@@ -64,7 +64,7 @@
         }
 
         &.icon-card {
-            padding: 20px 20px 20px 20px;
+            padding: 50px 20px 20px 20px;
         }
     }
 
@@ -116,10 +116,10 @@
         }
 
         &__card-content {
-            padding: 50px 24px 24px 24px;
+            padding: 24px 24px 24px 24px;
 
             &.icon-card {
-                padding: 24px 24px 24px 24px;
+                padding: 50px 24px 24px 24px;
             }
         }
     }

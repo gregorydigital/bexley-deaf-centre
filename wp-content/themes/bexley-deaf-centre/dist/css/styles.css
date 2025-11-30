@@ -3631,7 +3631,7 @@ section.bg-pattern {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.36) 67%, rgba(0, 0, 0, 0) 100%);
 }
 .general-cards__card-content {
-  padding: 50px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   position: relative;
   text-align: center;
   flex-grow: 1;
@@ -3653,7 +3653,7 @@ section.bg-pattern {
   margin-top: auto;
 }
 .general-cards__card-content.icon-card {
-  padding: 20px 20px 20px 20px;
+  padding: 50px 20px 20px 20px;
 }
 .general-cards__card-icon {
   position: absolute;
@@ -3695,10 +3695,10 @@ section.bg-pattern {
     width: calc(50% - 20px);
   }
   .general-cards__card-content {
-    padding: 50px 24px 24px 24px;
+    padding: 24px 24px 24px 24px;
   }
   .general-cards__card-content.icon-card {
-    padding: 24px 24px 24px 24px;
+    padding: 50px 24px 24px 24px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -4200,6 +4200,7 @@ section.bg-pattern {
   background-color: var(--primary);
   border-bottom-right-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
+  opacity: 0.9;
 }
 .quote-highlight__quote-icon {
   position: absolute;
