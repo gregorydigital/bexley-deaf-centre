@@ -1,0 +1,25 @@
+{
+	"name": "acf/timeline",
+	"title": "Timeline",
+	"description": "Section showing a dated timline",
+	"category": "base-theme-block",
+	"keywords": ["timeline history date"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "timeline.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}
