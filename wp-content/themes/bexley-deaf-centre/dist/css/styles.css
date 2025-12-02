@@ -4103,7 +4103,7 @@ section.bg-pattern {
   display: flex;
   justify-content: center;
 }
-.icon-repeater.bg-primary h2, .icon-repeater.bg-primary p {
+.icon-repeater.bg-primary .icon-repeater__content h2, .icon-repeater.bg-primary .icon-repeater__content p {
   color: white !important;
 }
 

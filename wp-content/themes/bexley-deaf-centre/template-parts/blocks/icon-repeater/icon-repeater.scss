@@ -66,8 +66,11 @@
     }
 
     &.bg-primary {
-        h2, p {
-            color: white !important;
+
+        .icon-repeater__content {
+            h2, p {
+                color: white !important;
+            }
         }
     }
 }
