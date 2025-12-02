@@ -115,7 +115,22 @@
     &__card {
         border-radius: 10px !important;
         box-shadow: var(--box-shadow);
-        // background-color: var(--primary-hover);
+        position: relative;
+
+        .timeline-card-top {
+            padding: 24px;
+            background-color: var(--light-grey);
+
+            h3 {
+                color: var(--primary-hover) !important;
+                font-weight: 600;
+                margin-top: 0 !important;
+                font-size: 30px;
+                margin-bottom: 0;
+                z-index: 2;
+                position: relative;
+            }
+        }
 
         .icon-bg {
             position: absolute;
@@ -136,14 +151,6 @@
                 position: relative;
                 z-index: 1;
             }
-        }
-
-        h3 {
-            color: var(--primary-hover) !important;
-            font-weight: 600;
-            margin-top: 0 !important;
-            font-size: 30px;
-            margin-bottom: 15px;
         }
 
         p {

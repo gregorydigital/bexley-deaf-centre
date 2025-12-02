@@ -4736,6 +4736,20 @@ section.bg-pattern {
 .timeline__card {
   border-radius: 10px !important;
   box-shadow: var(--box-shadow);
+  position: relative;
+}
+.timeline__card .timeline-card-top {
+  padding: 24px;
+  background-color: var(--light-grey);
+}
+.timeline__card .timeline-card-top h3 {
+  color: var(--primary-hover) !important;
+  font-weight: 600;
+  margin-top: 0 !important;
+  font-size: 30px;
+  margin-bottom: 0;
+  z-index: 2;
+  position: relative;
 }
 .timeline__card .icon-bg {
   position: absolute;
@@ -4755,13 +4769,6 @@ section.bg-pattern {
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
-}
-.timeline__card h3 {
-  color: var(--primary-hover) !important;
-  font-weight: 600;
-  margin-top: 0 !important;
-  font-size: 30px;
-  margin-bottom: 15px;
 }
 .timeline__card p {
   margin-top: 0;

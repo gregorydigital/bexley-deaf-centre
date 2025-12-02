@@ -42,19 +42,15 @@
                             <?php
                                 $card_date = get_sub_field('date');
                                 $card_text = get_sub_field('text');
-                                $card_image = get_sub_field('image');
                             ?>
                             <div class="card-container">
                                 <div class="timeline__card" data-aos="fade-up"  data-aos-delay="500">
-                                    <?php if (!empty($card_image)) : ?>
-                                        <div class="icon-bg">
-                                            <img src="<?php echo esc_url($card_image['url']); ?>" alt="<?php echo esc_attr($card_image['alt'] ?? ''); ?>" />
-                                        </div>
-                                    <?php endif; ?>
-                                    <div class="card-process-text">
+                                    <div class="timeline-card-top">
                                         <?php if(!empty($card_date)): ?>
                                             <h3><?php echo esc_html($card_date); ?></h3>
                                         <?php endif; ?>
+                                    </div>
+                                    <div class="card-process-text">
                                         <?php if(!empty($card_text)): ?>
                                             <?php echo wp_kses_post($card_text); ?>
                                         <?php endif; ?>
