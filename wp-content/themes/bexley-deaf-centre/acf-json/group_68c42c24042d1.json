@@ -21,7 +21,12 @@
                 "secondary": "secondary",
                 "white": "white",
                 "grey": "grey",
-                "pattern": "pattern"
+                "pattern": "pattern",
+                "beige": "beige",
+                "light-blue": "light-blue",
+                "white-blue-white": "white-blue-white",
+                "blue-white": "blue-white",
+                "white-blue": "white-blue"
             },
             "default_value": false,
             "return_format": "value",
@@ -58,5 +63,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1759855530
+    "modified": 1765116796
 }

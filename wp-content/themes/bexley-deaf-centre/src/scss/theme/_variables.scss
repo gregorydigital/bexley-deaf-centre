@@ -1,31 +1,27 @@
 :root {
 
    // Fonts 
-   --title-font: "Poppins", sans-serif;
+   --title-font: "Sora", sans-serif;
    --para-font: "Work Sans", sans-serif;;
    
    // Theme colours
    --black:  #000000;
    --white: #ffffff;
-   --white-light: rgba(255,255,255,0.8);
-   --light-grey: #F5F5F5;
-   --primary: #30415A;
-   --primary-dark: #0a2937;
-   --primary-hover: #3582a6;
-   --secondary: #63CABC;
-   --secondary-light:#dbe9e7;
+   --grey: #F5F5F5;
+   --primary: #112337;
+   --secondary: #3582a6;
+   --light-blue: #e7f4f9;
+   --beige: #f5f1ed;
+   --turquoise: #63CABC;
    --alert: #F15C40;
-   --secondary-hover: #cf7506;
-   --light-blue: #01B9F4;
-   --primary-bg: #F2F7FC;
-   --secondary-bg: #F4F3EF;
-   --text-color: rgb(100,100,100);
-   --header-height: 54px;
+   --text-color: rgb(80,80,80);
 
    // Spacing 
    --mobileGap: 20px;
    --desktopGap: 40px;
 
-   --border-radius: 10px;
+   //other
+   --header-height: 54px;
+   --border-radius: 6px;
    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 4px;
 }

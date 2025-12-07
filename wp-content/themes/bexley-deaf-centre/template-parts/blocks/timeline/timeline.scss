@@ -27,7 +27,7 @@
             left: 15px;
             height: 100%;
             width: 1px;
-            background-color: var(--primary-hover);
+            background-color: var(--primary);
         }
     }
 
@@ -79,7 +79,7 @@
             height: 30px;
             width: 30px;
             background-color: white;
-            border: 1px solid var(--primary-hover);
+            border: 1px solid var(--primary);
             border-radius: 50%;
         }
 
@@ -91,7 +91,7 @@
             transform: translateY(-50%);
             height: 12px;
             width: 12px;
-            background-color: var(--primary);
+            background-color: var(--secondary);
             border-radius: 50%;
             animation: pulse 1.5s ease-in-out infinite;
         }
@@ -116,13 +116,14 @@
         border-radius: 10px !important;
         box-shadow: var(--box-shadow);
         position: relative;
+        overflow: hidden;
 
         .timeline-card-top {
-            padding: 24px;
-            background-color: var(--light-grey);
+            padding: 24px 24px 0 24px;
+            // background-color: var(--secondary);
 
             h3 {
-                color: var(--primary-hover) !important;
+                color: var(--secondary) !important;
                 font-weight: 600;
                 margin-top: 0 !important;
                 font-size: 30px;
@@ -155,7 +156,7 @@
 
         p {
             margin-top: 0;
-            color: var(--primary);
+            color: var(--text-color);
         }
 
         .card-cta-box {
@@ -221,11 +222,6 @@
 
             p {
                 margin-bottom: 0;
-            }
-
-            .card-process-text,        
-            .card-cta-box {
-                padding: 30px;
             }
         }
     }

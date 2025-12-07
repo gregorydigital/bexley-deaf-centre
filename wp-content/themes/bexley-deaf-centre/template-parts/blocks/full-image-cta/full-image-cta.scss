@@ -22,7 +22,7 @@
 
         &.bg-inner-turquoise {
             &:before {
-                background: var(--secondary);
+                background: var(--turquoise);
             }
 
             span {
@@ -58,7 +58,7 @@
 
         span {
             font-weight: 600;
-            color: var(--secondary);
+            color: var(--turquoise);
             font-size: 14px;
             text-transform: uppercase;
         }

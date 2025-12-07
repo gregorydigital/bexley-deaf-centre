@@ -1,7 +1,7 @@
 @use './index' as *;
 
 .footer {
-    background-color: rgb(50, 50, 50);
+    background-color: var(--primary);
     padding-bottom: 30px;
 
     &__inner {

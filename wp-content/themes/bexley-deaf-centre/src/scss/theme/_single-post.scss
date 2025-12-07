@@ -27,7 +27,7 @@
     p {
         max-width: 800px;
         margin: auto;
-        color: var(--secondary);
+        color: var(--turquoise);
     }
 
     .post-meta {
@@ -216,7 +216,7 @@
                 }
 
                 th {
-                    background-color: var(--light-grey);
+                    background-color: var(--grey);
                 }
             }
         }
@@ -283,7 +283,7 @@
 .related-posts {
     
     padding: 60px 0;
-    background-color: var(--light-grey);
+    background-color: var(--grey);
 
     @include breakpoint(md){
         padding-bottom: 80px;

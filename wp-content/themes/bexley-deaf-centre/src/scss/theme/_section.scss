@@ -6,7 +6,7 @@ section {
     }
 
     &.bg-secondary {
-        background-color: var(--secondary);
+        background-color: var(--turquoise);
     }
 
     &.bg-white {
@@ -14,7 +14,27 @@ section {
     }
 
     &.bg-grey {
-        background-color: var(--light-grey);
+        background-color: var(--grey);
+    }
+
+    &.bg-beige {
+        background-color: var(--beige);
+    }
+
+    &.bg-light-blue {
+        background-color: var(--light-blue);
+    }
+
+    &.bg-white-blue-white {
+        background: linear-gradient(0deg,rgba(255, 255, 255, 1) 5%, rgba(231, 244, 249, 1) 50%, rgba(255, 255, 255, 1) 95%);
+    }
+
+    &.bg-white-blue {
+        background: linear-gradient(0deg,rgba(231, 244, 249, 1) 50%, rgba(255, 255, 255, 1) 95%);
+    }
+
+    &.bg-blue-white {
+        background: linear-gradient(0deg,rgba(255, 255, 255, 1) 5%, rgba(231, 244, 249, 1) 50%);
     }
 
     &.bg-pattern {

@@ -15,6 +15,7 @@ import initFAQ from './blocks/faq.js';
 import initSliders from './blocks/sliders.js';
 import initSliderModal from './blocks/gallery-modal.js';
 import initCardInfo from './blocks/card-info.js';
+import graphicsMove from './blocks/graphics-move.js';
 
 /**
  * Initialize all modules when DOM is ready
@@ -38,6 +39,7 @@ window.onload = function() {
     initSliderModal();
     initCardInfo();
     initFormChoices();
+    graphicsMove();
 
     AOS.init({
       duration: 950,

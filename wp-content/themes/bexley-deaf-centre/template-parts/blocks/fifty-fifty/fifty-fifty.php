@@ -39,6 +39,12 @@
                <?php endif; ?>
             </div>
             <div class="fifty-fifty__right" data-aos="fade-up">
+               <?php if($background_color === 'primary'): ?>
+                  <img class="dots-blue" src="<?php echo esc_url( get_template_directory_uri() . '/images/dots-white.svg' ); ?>">
+               <?php else: ?>
+                  <img class="dots-blue" src="<?php echo esc_url( get_template_directory_uri() . '/images/dots.svg' ); ?>">
+               <?php endif; ?>
+               <img class="graphic-blue" src="<?php echo esc_url( get_template_directory_uri() . '/images/blue-drop.svg' ); ?>">
                <div class="fifty-fifty__right-inner">
                   <?php if($show_video === false) : ?>
                      <?php if($image): ?>

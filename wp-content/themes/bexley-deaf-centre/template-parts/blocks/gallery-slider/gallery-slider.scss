@@ -3,7 +3,7 @@
 .gallery-slider {
 
     &.bg-cream {
-        background-color: var(--secondary);
+        background-color: var(--turquoise);
     }
 
     &__content {
@@ -86,7 +86,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    background: var(--secondary);
+    background: var(--turquoise);
     border: 0;
     color: var(--primary);
     font-size: 2rem;

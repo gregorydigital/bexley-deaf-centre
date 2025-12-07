@@ -3,7 +3,7 @@
 .hero {
    overflow: hidden;
    position: relative;
-
+   
    .hero__wave {
       position: absolute;
       bottom: -10px; /* overlap to avoid white line gaps */
@@ -71,7 +71,7 @@
 
    &__course {
       padding: 20px;
-      background-color: var(--secondary-light);
+      background-color: #f5f1ed;
       z-index: 2;
       border-radius: var(--border-radius);
    }
@@ -89,7 +89,7 @@
       }
 
       p {
-         color: var(--primary);
+         color: var(--text-color);
          margin-bottom: 0;
       }
 

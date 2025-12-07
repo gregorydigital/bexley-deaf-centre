@@ -11,7 +11,7 @@
     
     .ti-widget.ti-goog .ti-review-item {
         .ti-inner {
-            background-color: var(--secondary) !important;
+            background-color: var(--turquoise) !important;
             border-radius: 2px !important;
         }
     }
@@ -27,7 +27,7 @@
     &__card {
         border-radius: 4px;
         padding: 20px;
-        background-color: var(--secondary);
+        background-color: var(--turquoise);
 
         p {
             &:last-of-type {
