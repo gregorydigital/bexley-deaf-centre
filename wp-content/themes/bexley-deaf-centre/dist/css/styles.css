@@ -3023,7 +3023,6 @@ section.bg-pattern {
   background-color: var(--primary);
   color: white;
   flex-shrink: 0;
-  font-family: "Shippori Mincho", serif;
   font-size: 1.375rem;
 }
 .course-list__card .course-info .course-details {
