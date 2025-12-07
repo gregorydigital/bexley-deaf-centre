@@ -1655,11 +1655,11 @@ address {
   }
 }
 .padded-mid {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 @media screen and (min-width: 1100px) {
   .padded-mid {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 }
 
