@@ -24,7 +24,6 @@
         <div class='container'>
             <div class='contact-form__inner' data-aos="fade-up">
                 <img class="dots-blue" src="<?php echo esc_url( get_template_directory_uri() . '/images/dots-white.svg' ); ?>">
-                <img class="graphic-blue" src="<?php echo esc_url( get_template_directory_uri() . '/images/blue-drop.svg' ); ?>">
                 <div class="contact-form__left">
                     <?php if ($form_id) {
                         echo do_shortcode("[forminator_form id='{$form_id}']");
