@@ -10,7 +10,7 @@
     transition: top ease-in-out 0.3s, background-color ease-in-out 0.4s;   
 
     &--fill {
-        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     &__main {
@@ -251,6 +251,7 @@
 
         &.header--hidden {
             top: calc(var(--header-height) * -1);
+            box-shadow: none !important;
         }
 
         .menu-toggle {
