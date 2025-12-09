@@ -60,9 +60,9 @@
             },
             "choices": {
                 "blue": "blue",
-                "turquoise": "turquoise",
+                "secondary": "secondary",
                 "black": "black",
-                "red": "red"
+                "green": "green"
             },
             "default_value": false,
             "return_format": "value",
@@ -179,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760606234
+    "modified": 1765294342
 }

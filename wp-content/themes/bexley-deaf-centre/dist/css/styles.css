@@ -3577,22 +3577,19 @@ section.bg-pattern {
   background: var(--primary);
   opacity: 0.86;
 }
-.full-image-cta__inner.bg-inner-turquoise:before {
-  background: var(--turquoise);
+.full-image-cta__inner.bg-inner-secondary:before {
+  background: var(--secondary);
 }
-.full-image-cta__inner.bg-inner-turquoise span {
+.full-image-cta__inner.bg-inner-secondary span, .full-image-cta__inner.bg-inner-secondary h2, .full-image-cta__inner.bg-inner-secondary p {
   color: white;
-}
-.full-image-cta__inner.bg-inner-turquoise h2 {
-  color: var(--primary);
-}
-.full-image-cta__inner.bg-inner-turquoise p {
-  color: rgb(50, 50, 50);
 }
 .full-image-cta__inner.bg-inner-black:before {
   background: rgb(0, 0, 0);
 }
-.full-image-cta__inner.bg-inner-red:before {
+.full-image-cta__inner.bg-inner-green span {
+  color: var(--primary);
+}
+.full-image-cta__inner.bg-inner-green:before {
   background: var(--alert);
 }
 .full-image-cta__content {

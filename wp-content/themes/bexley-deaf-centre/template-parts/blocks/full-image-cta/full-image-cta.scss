@@ -20,21 +20,13 @@
             opacity: 0.86;    
         }
 
-        &.bg-inner-turquoise {
+        &.bg-inner-secondary {
             &:before {
-                background: var(--turquoise);
+                background: var(--secondary);
             }
 
-            span {
+            span, h2, p {
                 color: white;
-            }
-
-            h2 {
-                color: var(--primary);
-            }
-
-            p {
-                color: rgba(50,50,50,1);
             }
         }
 
@@ -44,7 +36,12 @@
             }
         }
 
-        &.bg-inner-red {
+        &.bg-inner-green {
+
+            span {
+                color: var(--primary);
+            }
+            
             &:before {
                 background: var(--alert);
             }
