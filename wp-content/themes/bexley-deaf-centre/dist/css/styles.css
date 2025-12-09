@@ -3057,7 +3057,7 @@ section.bg-pattern {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: white;
   flex-shrink: 0;
   font-size: 1.375rem;
