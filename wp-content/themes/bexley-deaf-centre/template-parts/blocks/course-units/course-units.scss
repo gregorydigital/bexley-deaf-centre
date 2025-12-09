@@ -27,7 +27,7 @@
     .unit-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 36px;
     }
 
     .course-title {
@@ -72,12 +72,10 @@
 
         h3 {
             margin-bottom: 0px;
-            color: var(--primary) !important;
         }
 
         p {
             margin-bottom: 0;
-            color: var(--text-color);
             font-size: rem(20px);
         }
 
@@ -113,9 +111,9 @@
 
         .course-unit-left {
             padding: 18px;
-            background-color: var(--grey);
+            background-color: var(--primary);
 
-            h3 {
+            h3, p {
                 color: white;
             }
         }
