@@ -37,7 +37,16 @@
       position: relative;
       z-index: 2;
       overflow: hidden;
-      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+
+      .video-wrapper {
+         width: 100%;
+      }
+      
+      iframe {
+         margin-bottom: 0;
+      }
    }
 
    &__buttons {
@@ -69,6 +78,23 @@
          height: 540px;
          grid-template-columns: repeat(2, 1fr);
          gap: 60px;
+      }
+   }
+}
+
+@include breakpoint(md) {
+   .home-hero {
+      &__inner {
+         gap: 80px;
+      }
+   }
+}
+
+@include breakpoint(lg) {
+   .home-hero {
+      &__inner {
+         grid-template-columns: 40% 1fr;
+         gap: 100px;
       }
    }
 }

@@ -20,7 +20,7 @@
         <?php endif; ?>
         <div class="quote-highlight__quote-background">
             <div class="quote-highlight__quote-icon">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/images/quote-white.svg' ); ?>" alt="quote icon white"/>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/images/quote.svg' ); ?>" alt="quote icon white"/>
             </div>
         </div>
         <div class='container'>

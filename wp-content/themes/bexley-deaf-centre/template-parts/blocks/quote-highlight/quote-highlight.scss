@@ -12,7 +12,7 @@
         top: 80px;
         width: 80%;
         height: calc(100% - 120px);  
-        background-color: var(--primary);
+        background-color: var(--secondary);
         border-bottom-right-radius: var(--border-radius);
         border-top-right-radius: var(--border-radius);
         opacity: 0.9;
@@ -23,7 +23,7 @@
         border-radius: 50%;
         height: 100px;
         width: 100px;
-        background-color: var(--secondary);
+        background-color: white;
         right: 60px;
         top: -50px;
         display: flex;
@@ -34,7 +34,7 @@
             content: '';
             width: 94px;
             height: 94px;
-            border: 2px solid white;
+            border: 2px solid var(--primary);
             border-radius: 50%;
             position: absolute;
             left: 50%;

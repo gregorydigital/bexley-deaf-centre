@@ -6,8 +6,9 @@
 
     <section class='hero-cards padded-mid'>
         <div class='container'>
-            <div class='hero-cards__inner' data-aos="fade-up">
+            <div class='hero-cards__inner'>
                 <?php if(have_rows('hero_cards')): ?>
+                    <?php $delay = 0 ?>
                     <?php while(have_rows('hero_cards')): the_row();?>
                         <?php
                             $title = get_sub_field('title');
@@ -15,7 +16,8 @@
                             $link = get_sub_field('link');
                             $image = get_sub_field('image');
                         ?>
-                        <div class="hero-cards__card <?php echo $image ? 'bg-image' : '';?>">
+                        <div class="hero-cards__card <?php echo $image ? 'bg-image' : '';?>" data-aos="fade-up" data-aos-delay="<?php echo $delay ?>"  data-aos-offset="250">
+>
                             <?php if (!empty($image)) : ?>
                                 <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
                             <?php endif; ?>
@@ -35,7 +37,7 @@
                                 <?php endif; ?>
                             </div>
                         </div>
-                    <?php endwhile; ?>
+                    <?php $delay += 200; endwhile; ?>
                 <?php endif; ?>
             </div>
         </div>

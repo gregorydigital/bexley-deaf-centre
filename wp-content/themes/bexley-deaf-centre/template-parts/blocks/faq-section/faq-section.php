@@ -24,7 +24,7 @@
                 <?php endif; ?>
             </div>
             <div class="faq-section__inner">
-                <div class="faq-section__left">
+                <div class="faq-section__left" data-aos="fade">
                     <div class="faq-section__content">
                         <?php if(!empty($title)) : ?>
                             <h2><?php echo esc_html($title) ?></h2>
@@ -48,13 +48,15 @@
                                 $question = get_sub_field('question');
                                 $answer = get_sub_field('answer');
                             ?>
-                            <div class="faq-row">
-                                <div class="faq-question">
-                                    <h3><span class="faq-question-number"><?php echo $count < 10 ? '0' : ''; ?><?php echo $count ?>.</span> <?php echo esc_html($question) ?></h3>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#555427" viewBox="0 0 1024 1024"><path d="M256 120.768 306.432 64 768 512 306.432 960 256 903.232 659.072 512z"/></svg>                                
-                                </div>
-                                <div class="faq-answer">
-                                    <p><?php echo esc_html($answer) ?></p>
+                            <div class="aniamtion-container" data-aos="fade-up">
+                                <div class="faq-row">
+                                    <div class="faq-question">
+                                        <h3><span class="faq-question-number"><?php echo $count < 10 ? '0' : ''; ?><?php echo $count ?>.</span> <?php echo esc_html($question) ?></h3>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#555427" viewBox="0 0 1024 1024"><path d="M256 120.768 306.432 64 768 512 306.432 960 256 903.232 659.072 512z"/></svg>                                
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p><?php echo esc_html($answer) ?></p>
+                                    </div>
                                 </div>
                             </div>
                         <?php $count ++; endwhile; ?>

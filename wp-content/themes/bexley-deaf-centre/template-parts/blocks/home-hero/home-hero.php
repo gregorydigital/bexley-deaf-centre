@@ -9,6 +9,12 @@
    $cta_1_color = get_field('cta_1_color');
    $cta_2 = get_field('cta_2');
    $cta_2_color = get_field('cta_2_color');
+
+   if($title) :
+      $title = preg_replace_callback('/\[\[(.*?)\]\]/', function($matches) {
+            return '<span class="text-accent">' . esc_html($matches[1]) . '</span>';
+      }, $title);
+   endif;
 ?>
 
 <?php if ( ! empty( $block['data']['_is_preview'] ) ) : ?>
@@ -25,7 +31,7 @@
          <div class="home-hero__inner">
             <div class="home-hero__left" data-aos="fade-up">
                <?php if(!empty($title)): ?>
-                  <h1><?php echo esc_html($title); ?></h1>
+                  <h1><?php echo wp_kses_post($title); ?></h1>
                <?php endif; ?>
                <?php if(!empty($text)): ?>
                   <p><?php echo esc_html($text); ?></p>

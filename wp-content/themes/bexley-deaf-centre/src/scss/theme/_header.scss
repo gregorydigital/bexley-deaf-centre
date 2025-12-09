@@ -13,23 +13,19 @@
         box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     }
 
-    &__top {
-        display: none;
-        background-color: var(--primary-bg);
-        height: var(--header-height);
-    }
-
     &__main {
-        background-color: var(--primary);
+        background-color: var(--white);
         height: var(--header-height);
 
         .header__logo {
             transition: max-height 0.3s ease;
             margin: 12px 0;
             height: 30px;
+            display: flex;
+            align-items: center;
 
             img {
-                height: 30px;
+                height: 20px;
             }
         }
     }
@@ -113,7 +109,7 @@
 
                         a {
                             padding: 5px 20px;
-                            background-color: var(--turquoise);
+                            background-color: var(--alert);
                             color: white !important;
                             transition: background-color 0.3s ease;
                             border-radius: var(--border-radius);
@@ -138,7 +134,7 @@
                             padding-right: 20px;
                             position: relative;
 
-                            &::before {
+                            &:before {
                                 position: absolute;
                                 content: '';
                                 right: 0;
@@ -204,7 +200,7 @@
         .hamburger {
             width: 30px;
             height: 3px;
-            background: white;
+            background: var(--primary);
             position: absolute;
             left: 0;
             top: 50%;
@@ -217,7 +213,7 @@
                 position: absolute;
                 width: 30px;
                 height: 3px;
-                background: white;
+                background: var(--primary);
                 transition: all 0.3s ease;
             }
 
@@ -352,23 +348,19 @@
                         align-items: center;
 
                         a {
-                            color: white;
                             transition: color 0.3s ease;
 
-                            &:after {
-                                position: absolute;
-                                content: '';
-                                left: 0;
-                                bottom: -4px;
-                                width: 0;
-                                height: 1px;
-                                background-color: white;
-                                transition: width 0.3s ease;
+                            &:hover {
+                                color: var(--secondary);
+                            }
+
+                            &:before {
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns' version='1.1' viewBox='-0.01 -0.01 23.99 14.02'%3E%3Ctitle%3Echevron-down%3C/title%3E%3Cdesc%3ECreated with Sketch Beta.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'%3E%3Cg id='Icon-Set' sketch:type='MSLayerGroup' transform='translate(-572.000000, -1200.000000)' fill='%23112337'%3E%3Cpath d='M595.688,1200.28 C595.295,1199.89 594.659,1199.89 594.268,1200.28 L583.984,1211.57 L573.702,1200.28 C573.31,1199.89 572.674,1199.89 572.282,1200.28 C571.89,1200.68 571.89,1201.32 572.282,1201.71 L583.225,1213.72 C583.434,1213.93 583.711,1214.02 583.984,1214 C584.258,1214.02 584.535,1213.93 584.745,1213.72 L595.688,1201.71 C596.079,1201.32 596.079,1200.68 595.688,1200.28' id='chevron-down' sketch:type='MSShapeGroup'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
                             }
 
                             &:hover {
-                                &:after {
-                                    width: 100%;
+                                &:before {
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns' version='1.1' viewBox='-0.01 -0.01 23.99 14.02'%3E%3Ctitle%3Echevron-down%3C/title%3E%3Cdesc%3ECreated with Sketch Beta.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'%3E%3Cg id='Icon-Set' sketch:type='MSLayerGroup' transform='translate(-572.000000, -1200.000000)' fill='%233582a6'%3E%3Cpath d='M595.688,1200.28 C595.295,1199.89 594.659,1199.89 594.268,1200.28 L583.984,1211.57 L573.702,1200.28 C573.31,1199.89 572.674,1199.89 572.282,1200.28 C571.89,1200.68 571.89,1201.32 572.282,1201.71 L583.225,1213.72 C583.434,1213.93 583.711,1214.02 583.984,1214 C584.258,1214.02 584.535,1213.93 584.745,1213.72 L595.688,1201.71 C596.079,1201.32 596.079,1200.68 595.688,1200.28' id='chevron-down' sketch:type='MSShapeGroup'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
                                 }
                             }
                         }

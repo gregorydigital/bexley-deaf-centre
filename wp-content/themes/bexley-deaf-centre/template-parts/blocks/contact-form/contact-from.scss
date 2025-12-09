@@ -16,7 +16,8 @@
             top: 0;
             height: 100%;
             width: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: #112337;
+            opacity: 0.8;
         }
     }
 
@@ -25,11 +26,34 @@
         grid-template-columns: repeat(1, 1fr);
         max-width: 1000px;
         margin: auto;
-        background-color: white;
         position: relative;
         z-index: 2;
         border-radius: var(--border-radius);
-        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        padding: 30px 0;
+
+        .graphic-blue {
+            position: absolute;
+            left: 0px;
+            bottom: -60px;
+            height: 160px;
+            width: auto;
+            z-index: 0;
+            will-change: transform;
+            transition: transform 0.1s linear;
+         }
+   
+        .dots-blue {
+            position: absolute;
+            right: 0px;
+            top: -50px;
+            height: 160px;
+            width: auto;
+            will-change: transform;
+            z-index: 0;
+            transition: transform 0.1s linear;
+        }
     }
 
     &__right {
@@ -39,7 +63,9 @@
         width: 100%;
         overflow: hidden;
         padding: 30px;
-        background-color: var(--primary);
+        background-color: var(--secondary);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
         h2, p {
             margin-bottom: 20px;
@@ -155,9 +181,13 @@
 
     &__left {
 
+        background-color: white;
         padding: 30px;
         display: flex;
         align-items: center;
+        z-index: 1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
 
         form {
             margin-bottom: 0 !important;
@@ -233,7 +263,7 @@
             .forminator-button {
                 box-shadow: none !important;
                 outline: none !important;
-                background-color: var(--turquoise) !important;
+                background-color: var(--primary) !important;
             }
 
             input, 
@@ -265,8 +295,26 @@
 @include breakpoint(sm) {
     .contact-form {
 
+        &__left {
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 0;
+        }
+
+        &__right {
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+        }
+
         &__inner {
             grid-template-columns: 1fr 350px;
+
+            .graphic-blue {
+                left: -50px;
+             }
+       
+            .dots-blue {
+                right: -50px;
+            }
         }
     }
 }

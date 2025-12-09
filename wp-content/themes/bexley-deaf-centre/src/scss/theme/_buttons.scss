@@ -23,7 +23,7 @@
         color: white;
 
         &:hover {
-            background-color: var(--turquoise);
+            background-color: var(--primary);
         }
     }
 
@@ -50,13 +50,13 @@
         background-color: transparent;
         border: none;
         padding: 10px;
-        color: var(--turquoise);
+        color: var(--secondary);
 
         &:hover {
             background-color: transparent;
             text-decoration: underline;
             text-underline-offset: 2px;
-            color: var(--turquoise);
+            color: var(--secondary);
         }
     }
 

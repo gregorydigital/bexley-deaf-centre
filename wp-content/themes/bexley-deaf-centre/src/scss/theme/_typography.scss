@@ -38,6 +38,10 @@ h1, .fs-h1 {
 	&.hero-title {
 		font-weight: 600;
 	}
+
+	.text-accent {
+		color: var(--secondary);
+	}
 }
 
 h2, .fs-h2 {

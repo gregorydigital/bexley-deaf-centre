@@ -20,7 +20,7 @@
    <section class="fifty-fifty padded-mid bg-<?php echo $background_color; ?> <?php echo $flip ? 'flip' : '' ; ?> <?php echo $wide ? 'wide-fifty' : '';?>" > 
       <div class="container"> 
          <div class="fifty-fifty__inner"> 
-            <div class="fifty-fifty__left" data-aos="fade-up">
+            <div class="fifty-fifty__left" data-aos="fade-up" data-aos-offset="200">
                <?php if($subtitle): ?>
                   <span class="fifty-fifty__preheader"><?php echo $subtitle; ?></span>
                <?php endif; ?>
@@ -38,7 +38,7 @@
                   <a class='btn' href='<?php echo esc_url( $link_url ); ?>' target='<?php echo esc_attr( $link_target ); ?>'><?php echo esc_html( $link_title ); ?></a>
                <?php endif; ?>
             </div>
-            <div class="fifty-fifty__right" data-aos="fade-up">
+            <div class="fifty-fifty__right" data-aos="fade-up" data-aos-offset="200">
                <?php if($background_color === 'primary'): ?>
                   <img class="dots-blue" src="<?php echo esc_url( get_template_directory_uri() . '/images/dots-white.svg' ); ?>">
                <?php else: ?>

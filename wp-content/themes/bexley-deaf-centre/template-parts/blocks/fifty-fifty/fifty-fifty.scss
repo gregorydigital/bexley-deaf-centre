@@ -92,15 +92,16 @@
       position: relative;
       overflow: hidden;
       border-radius: var(--border-radius);
-      height: 400px;
+      height: 270px;
       width: 100%;
       z-index: 2;
    }
 
-   &.bg-primary {
+   &.bg-primary,
+   &.bg-secondary  {
 
       .fifty-fifty__preheader {
-         color: var(--turquoise);
+         color: var(--white);
       }
 
       h2, p, li {
@@ -190,6 +191,10 @@
          grid-template-columns: 40% 1fr;
       }
 
+      &__right-inner {
+         min-height: 330px;
+      }
+
       &__right {
 
          margin: 50px;
@@ -232,6 +237,10 @@
    .fifty-fifty {
       &__inner {
          gap: 140px;
+      }
+
+      &__right-inner {
+         min-height: 380px;
       }
 
       &.wide-fifty {
