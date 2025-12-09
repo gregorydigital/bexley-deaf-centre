@@ -2785,7 +2785,7 @@ section.bg-pattern {
 .contact-form.no-pad-top {
   padding-top: 0 !important;
 }
-.contact-form.image:after {
+.contact-form:after {
   position: absolute;
   content: "";
   left: 0;
@@ -2994,18 +2994,6 @@ section.bg-pattern {
 .contact-form__left .forminator-field textarea,
 .contact-form__left .forminator-field .forminator-select .selection > span {
   border-radius: 10px !important;
-}
-.contact-form.split:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 70%;
-  width: 100%;
-  background-color: #e7f4f9;
-}
-.contact-form.split .contact-form__inner {
-  box-shadow: var(--box-shadow);
 }
 
 @media screen and (min-width: 768px) {

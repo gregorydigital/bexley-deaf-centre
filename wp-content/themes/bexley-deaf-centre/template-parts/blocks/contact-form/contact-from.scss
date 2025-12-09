@@ -8,19 +8,17 @@
         padding-top: 0 !important;
     }
 
-    &.image {
-        &:after {
-            position: absolute;
-            content: '';
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #112337;
-            opacity: 0.8;
-        }
+    &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #112337;
+        opacity: 0.8;
     }
-
+    
     &__inner {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -271,23 +269,6 @@
             .forminator-select .selection > span {
                 border-radius: 10px !important;
             }
-        }
-    }
-
-    &.split {
-
-        &:before {
-            position: absolute;
-            content: '';
-            left: 0;
-            bottom: 0;
-            height: 70%;
-            width: 100%;
-            background-color: #e7f4f9;
-        }
-
-        .contact-form__inner {
-            box-shadow: var(--box-shadow);
         }
     }
 }
