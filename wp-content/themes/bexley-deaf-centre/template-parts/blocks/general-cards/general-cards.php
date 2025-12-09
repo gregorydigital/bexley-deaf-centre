@@ -39,7 +39,7 @@
                                 <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
                             </div>
                             <?php endif; ?>
-                            <?php if(!empty($card_text)): ?>
+                            <?php if(!empty($card_title)): ?>
                             <div class="general-cards__card-content <?php echo $icon ? 'icon-card' : '' ; ?>">
                                 <?php if (!empty($icon)) : ?>
                                 <div class="general-cards__card-icon">
