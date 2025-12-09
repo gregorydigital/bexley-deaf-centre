@@ -163,6 +163,8 @@
         &__image {
             margin-top: 20px;
             height: unset;
+            min-height: 280px;
+            border-radius: var(--border-radius);
             max-height: 500px;
             flex-grow: 1;
         }
