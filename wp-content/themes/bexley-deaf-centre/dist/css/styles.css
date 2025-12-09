@@ -2958,7 +2958,7 @@ section.bg-pattern {
 }
 .contact-form__left #acf-course-select {
   color: #757575 !important;
-  border-radius: 2px !important;
+  border-radius: var(--border-radius) !important;
   font-size: 16px;
   font-family: inherit;
   font-weight: 400;

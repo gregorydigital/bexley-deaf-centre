@@ -223,7 +223,7 @@
         #acf-course-select {
 
             color:#757575 !important;
-            border-radius: 2px !important;
+            border-radius: var(--border-radius) !important;
 
             &::placeholder {
                 color:#757575 !important;
