@@ -2128,7 +2128,7 @@ section.bg-pattern {
 .footer__inner .footer-legal h4 {
   font-weight: 600;
   font-size: 1.125rem;
-  color: white;
+  color: var(--secondary);
 }
 .footer__inner .footer-menu ul,
 .footer__inner .footer-menu-2 ul,
