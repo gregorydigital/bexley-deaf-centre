@@ -22,12 +22,12 @@
       <?php endif; ?>
       <div class="container">
          <div class="hero__inner">
-            <div class="hero__content" data-aos="fade-up">
+            <div class="hero__content" data-aos="fade-left">
                <?php if(!empty($title)): ?>
-                  <h1><span></span><?php echo esc_html($title); ?></h1>
+                  <h1 data-aos="fade-left" data-aos-delay="200"><span></span><?php echo esc_html($title); ?></h1>
                <?php endif; ?>
                <?php if(!empty($text)): ?>
-                  <p><?php echo esc_html($text); ?></p>
+                  <p data-aos="fade-left" data-aos-delay="300"><?php echo esc_html($text); ?></p>
                <?php endif; ?>
                <?php if( $link ):
                   $link_url = $link['url'];

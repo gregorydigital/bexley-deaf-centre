@@ -3927,6 +3927,18 @@ section.bg-pattern {
   overflow: hidden;
   position: relative;
 }
+.hero img {
+  transform: scale(1.2);
+  animation: scaleDown 0.6s ease-out forwards;
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .hero:before {
   z-index: 1;
   position: absolute;

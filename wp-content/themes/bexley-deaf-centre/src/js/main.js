@@ -42,7 +42,8 @@ window.onload = function() {
     graphicsMove();
 
     AOS.init({
-      duration: 950,
+      duration: 800,
+      easing: 'ease-out',
       once: true,
       disable: 'mobile',
     });
