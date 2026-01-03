@@ -4381,6 +4381,9 @@ section.bg-pattern {
   background-color: white;
   border: 2px solid #eeeeee;
 }
+.impact-report__service p {
+  margin-bottom: 0;
+}
 .impact-report__service h4 {
   margin-bottom: 16px;
   font-weight: 600;
