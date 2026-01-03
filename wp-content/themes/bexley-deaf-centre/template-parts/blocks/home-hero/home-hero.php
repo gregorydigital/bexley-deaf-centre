@@ -29,14 +29,14 @@
       <?php endif; ?>
       <div class="container">
          <div class="home-hero__inner">
-            <div class="home-hero__left" data-aos="fade-up">
+            <div class="home-hero__left">
                <?php if(!empty($title)): ?>
-                  <h1><?php echo wp_kses_post($title); ?></h1>
+                  <h1 data-aos="fade-up"><?php echo wp_kses_post($title); ?></h1>
                <?php endif; ?>
                <?php if(!empty($text)): ?>
-                  <p><?php echo esc_html($text); ?></p>
+                  <p data-aos="fade-up" data-aos-delay="200"><?php echo esc_html($text); ?></p>
                <?php endif; ?>
-               <div class="home-hero__buttons">
+               <div class="home-hero__buttons" data-aos="fade-up" data-aos-delay="400">
                   <?php if( $cta_1 ):
                      $cta_1_url = $cta_1['url'];
                      $cta_1_title = $cta_1['title'];
