@@ -4330,12 +4330,13 @@ section.bg-pattern {
   right: -50px;
   opacity: 0.38;
 }
-.impact-report__stat .stat-ring img {
-  height: 70px;
+.impact-report__stat img {
+  height: 54px;
   width: auto;
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
 }
 .impact-report__stat:nth-of-type(1) .stat-ring {
   background: #007dc5;

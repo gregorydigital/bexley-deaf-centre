@@ -36,11 +36,10 @@
               $icon = get_sub_field('icon');
             ?>
              <div class="impact-report__stat" data-count="<?php echo esc_attr($stat); ?>">
-              <span class="stat-ring">
-                <?php if (!empty($icon)) : ?>
-                    <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt'] ?? ''); ?>" />
-                <?php endif; ?>
-              </span>
+              <?php if (!empty($icon)) : ?>
+                  <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt'] ?? ''); ?>" />
+              <?php endif; ?>
+              <span class="stat-ring"></span>
               <strong>0</strong>
               <?php if(!empty($subtitle)): ?>
                 <h4><?php echo esc_html($subtitle); ?></h4>

@@ -103,14 +103,15 @@
       top: -50px;
       right: -50px;
       opacity: 0.38;
+    }
 
-      img {
-        height: 70px;
-        width: auto;
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-      }
+    img {
+      height: 54px;
+      width: auto;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
     }
 
     &:nth-of-type(1) {
