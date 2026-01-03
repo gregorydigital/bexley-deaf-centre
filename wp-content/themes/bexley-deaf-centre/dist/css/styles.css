@@ -4331,7 +4331,8 @@ section.bg-pattern {
   opacity: 0.38;
 }
 .impact-report__stat img {
-  height: 54px;
+  max-height: 54px;
+  max-width: 54px;
   width: auto;
   position: absolute;
   top: 20px;
