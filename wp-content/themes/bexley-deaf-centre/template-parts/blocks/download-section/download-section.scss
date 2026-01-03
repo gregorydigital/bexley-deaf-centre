@@ -1,0 +1,28 @@
+@use '../../../src/scss/theme/index' as *;
+
+.download-section {
+    &__inner {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+    &.bg-primary {
+        h3, p {
+            color: white;
+        }
+
+        .btn {
+            background-color: var(--secondary);
+
+            &:hover {
+                background-color: white;
+                color: var(--secondary);
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "acf/impact-report",
+    "title": "Impact Report",
+    "description": "Annual impact report layout for charity reporting",
+    "category": "base-theme-block",
+    "icon": "chart-bar",
+    "keywords": ["impact", "report", "charity", "statistics"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "impact-report.php"
+    },
+    "supports": {
+      "align": false,
+      "html": false,
+      "jsx": false,
+      "mode": true
+    },
+    "example": {
+      "attributes": {
+        "mode": "preview",
+        "data": {
+          "_is_preview": "true"
+        }
+      }
+    }
+  }
