@@ -17,7 +17,7 @@
 
 <?php else: ?>
 
-    <section class='contact-form padded-mid <?php echo esc_html($background_type);?> <?php echo $remove_padding ? 'no-pad-top' : ''; ?>'>
+    <section class='contact-form padded-mid <?php echo esc_html($background_type);?> <?php echo $remove_padding ? 'no-pad-top' : ''; ?>' id="contact-form">
         <?php if (!empty($image)) : ?>
             <img class="img-object-fit" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" />
         <?php endif; ?>
